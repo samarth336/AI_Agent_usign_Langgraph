@@ -1,53 +1,131 @@
 import streamlit as st
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import uuid
+from typing import Dict, List
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from agents.agent_run import run_agent
 
+# ========================== Utilities ==========================
 
-st.set_page_config(
-    page_title="Chat App",
-    page_icon="💬",
-    layout="centered"
-)
+def new_thread_id() -> str:
+    return str(uuid.uuid4())
 
-st.title("💬 Chat Interface")
+def create_new_chat():
+    tid = new_thread_id()
+    st.session_state.current_thread = tid
+    st.session_state.conversations[tid] = []
 
+def load_thread(tid: str):
+    st.session_state.current_thread = tid
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+# ========================== Session Init ==========================
 
-if "thread_id" not in st.session_state:
-    st.session_state.thread_id = "samarth"  # or uuid
+if "conversations" not in st.session_state:
+    st.session_state.conversations = {}
 
-for msg in st.session_state.messages:
+if "current_thread" not in st.session_state:
+    create_new_chat()
+
+# ========================== Sidebar ==========================
+
+with st.sidebar:
+    st.title("🧠 Chats")
+
+    if st.button("➕ New Chat", use_container_width=True):
+        create_new_chat()
+        st.rerun()
+
+    st.divider()
+    st.subheader("My Conversations")
+
+    if not st.session_state.conversations:
+        st.caption("No conversations yet")
+    else:
+        for tid in reversed(list(st.session_state.conversations.keys())):
+            label = tid[:8]
+            if st.button(label, key=tid, use_container_width=True):
+                load_thread(tid)
+                st.rerun()
+
+    st.divider()
+    st.subheader("Current Chat")
+    st.button(
+        st.session_state.current_thread[:8],
+        disabled=True,
+        use_container_width=True
+    )
+
+# ========================== Main Chat ==========================
+
+st.markdown("## 💬 Chat")
+
+messages = st.session_state.conversations[
+    st.session_state.current_thread
+]
+
+for msg in messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-user_input = st.chat_input("Type your message...")
+# ========================== Input ==========================
+
+user_input = st.chat_input("Send a message...")
 
 if user_input:
-    # Store user message
-    st.session_state.messages.append(
+    # User message
+    messages.append(
         {"role": "user", "content": user_input}
     )
 
-    # Display user message
     with st.chat_message("user"):
         st.markdown(user_input)
 
-    # ---- Bot response (placeholder) ----
-    response = run_agent(
-    user_input,
-    thread_id=st.session_state.thread_id
-)
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            print("Query:", user_input)
+            result = run_agent(
+                user_input,
+                thread_id=st.session_state.current_thread
+            )
+            response = result["output"]
+            images = result.get("images", [])
+            
+            # Extract image URLs from markdown format in response
+            import re
+            markdown_images = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', response)
+            
+            # Remove markdown image syntax from text for cleaner display
+            text_without_images = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', '', response)
+            
+            # Display text response with HTML support for img tags
+            st.markdown(text_without_images.strip(), unsafe_allow_html=True)
+            
+            # Display images from state
+            if images:
+                for img_url in images:
+                    if img_url:
+                        try:
+                            st.image(img_url, width='stretch')
+                        except Exception as e:
+                            st.warning(f"Could not load image: {img_url}")
+            
+            # Display images extracted from markdown links
+            if markdown_images:
+                for alt_text, img_url in markdown_images:
+                    if img_url:
+                        try:
+                            st.image(img_url, caption=alt_text if alt_text else None, width='stretch')
+                        except Exception as e:
+                            st.warning(f"Could not load image: {img_url}")
 
-    # Store bot message
-    st.session_state.messages.append(
+    messages.append(
         {"role": "assistant", "content": response}
     )
-
-    # Display bot message
-    with st.chat_message("assistant"):
-        st.markdown(response)
+    if images:
+        for img_url in images:
+            if img_url:
+                messages.append(
+                    {"role": "assistant", "content": f"![image]({img_url})"}
+                )

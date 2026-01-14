@@ -1,6 +1,8 @@
 from openai import OpenAI
 from google import genai
 import os
+from typing import cast
+from openai.types.chat import ChatCompletionMessageParam
 from config.config_loader import load_model_config
 config=load_model_config()
 from dotenv import load_dotenv
@@ -29,7 +31,31 @@ class PlannerLLMService:
         )
         return response
     
-    
-if __name__ == "__main__":
-    llm=LLMService()
-    print(llm.invoke("capital of india"))
+class PlannerLLMServiceHF:
+    def __init__(self):
+        self.client = OpenAI(api_key=os.getenv("HF_TOKEN"), 
+                            base_url="https://router.huggingface.co/v1")
+    def invoke(self, input_text):
+        # Handle both string input and message objects from ChatPromptTemplate
+        if isinstance(input_text, str):
+            messages = [{"role": "user", "content": input_text}]
+        else:
+            # Convert message objects to API format with proper role mapping
+            messages = []
+            for msg in input_text:
+                # Map LangChain message types to OpenAI roles
+                role_map = {"human": "user", "ai": "assistant", "system": "system"}
+                role = role_map.get(msg.type, msg.type)
+                
+                # Ensure content is not empty
+                content = msg.content if msg.content else ""
+                if not content:
+                    continue  # Skip empty messages
+                
+                messages.append({"role": role, "content": content})
+        
+        response = self.client.chat.completions.create(
+            model="zai-org/GLM-4.7",
+            messages=cast(list[ChatCompletionMessageParam], messages)
+        )
+        return response.choices[0].message.content

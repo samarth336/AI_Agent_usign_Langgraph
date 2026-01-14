@@ -1,93 +1,45 @@
 import os
 from dotenv import load_dotenv
 from langchain.chat_models import init_chat_model
-from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel
 from typing import Literal, Any, cast
+from src.LLM.llmService import PlannerLLMServiceHF
 
 from agents.state import AgentState
-
+from agents.prompts import planner_prompt
 
 # -------------------------
 # Load environment variables
 # -------------------------
-load_dotenv()
+# load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY not found in .env file")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# if not GEMINI_API_KEY:
+#     raise RuntimeError("GEMINI_API_KEY not found in .env file")
 
 
 # -------------------------
 # Initialize Gemini model
 # -------------------------
-model = init_chat_model(
-    "google_genai:gemini-2.5-flash",
-    api_key=GEMINI_API_KEY,
-    temperature=0
-)
+# model = init_chat_model(
+#     "google_genai:gemini-2.5-flash",
+#     api_key=GEMINI_API_KEY,
+#     temperature=0
+# )
 
+model = PlannerLLMServiceHF()
 
 # -------------------------
 # Structured output schema
 # -------------------------
-class PlannerDecision(BaseModel):
-    tool: Literal["search", "calculator", "none"]
-    answer: str | None
-    tool_input: str | None
+# class PlannerDecision(BaseModel):
+#     tool: Literal["search", "calculator", "none"]
+#     answer: str | None
+#     tool_input: str | None
 
 
-# Bind structured output
-planner_model = model.with_structured_output(PlannerDecision)
-
-
-# -------------------------
-# Prompt (MEMORY AWARE)
-# -------------------------
-prompt = ChatPromptTemplate.from_messages([
-    (
-        "system",
-        """
-        You are a planner agent.
-
-        You are given the FULL conversation history.
-        Use it to understand context and follow-up questions.
-
-        AVAILABLE TOOLS:
-
-        1. search
-           - Use when the query needs factual, external, or real-world information.
-           - Input: A search query string.
-
-        DECISION RULES:
-
-        - If you can answer directly from the conversation history or general knowledge:
-          - tool = "none"
-          - answer = final answer
-          - tool_input = null
-
-        - If a tool is required:
-          - tool = "search"
-          - answer = null
-          - tool_input = input string for the tool
-
-        IMPORTANT:
-        - If the user asks something already mentioned earlier, you MUST use that information.
-        - Follow the schema strictly.
-        """
-    ),
-    (
-        "human",
-        """
-        Conversation history:
-        {conversation}
-
-        Current user question:
-        {latest_question}
-        """
-    )
-])
-
+# # Bind structured output
+# planner_model = model.with_structured_output(PlannerDecision)
 
 # -------------------------
 # Planner node (WITH MEMORY)
@@ -97,39 +49,39 @@ def planner(state: AgentState) -> AgentState:
     Planner that uses short-term conversational memory.
     """
 
-    # Build conversation history (role-aware)
-    conversation = "\n".join(
-        f"{m['role'].capitalize()}: {m['content']}"
-        for m in state["messages"]
-    )
+    # Build conversation history role-aware
+    prompt=planner_prompt(state)
+    result = model.invoke(prompt)
     
-    print("Conversation History (planner):\n", conversation)
+    # Parse the result to extract tool, answer, and tool_input
+    lines = result.split('\n') if result else []
+    parsed = {}
+    for line in lines:
+        if ':' in line:
+            key, value = line.split(':', 1)
+            key = key.strip().lower()
+            value = value.strip()
+            # Convert 'null' string to None
+            if value.lower() == 'null':
+                value = None
+            parsed[key] = value
     
-    latest_question = state["messages"][-1]["content"]
-
-    result = planner_model.invoke(
-        prompt.format_messages(
-            conversation=conversation,
-            latest_question=latest_question
-        )
-    )
-
-    # Normalize result to PlannerDecision regardless of whether the model returns a dict or a pydantic BaseModel
-    if isinstance(result, PlannerDecision):
-        decision = result
-    elif isinstance(result, BaseModel):
-        decision = PlannerDecision.parse_obj(result.dict())
-    elif isinstance(result, dict):
-        decision = PlannerDecision.parse_obj(result)
-    else:
-        raise RuntimeError(f"Unexpected planner model output type: {type(result)!r}")
+    # Set state fields
+    state["tool"] = parsed.get("tool", "none")
     
-    assistant_reply = {"role": "assistant", "content": decision.answer or "Using tool: " + decision.tool}
-    state["messages"].append(cast(Any, assistant_reply))
+    # Handle answer - only set if tool is none
+    answer = parsed.get("answer")
+    if answer and state["tool"] == "none":
+        state["output"] = answer
     
-    state["tool"] = decision.tool
-    state["tool_input"] = [decision.tool_input] if decision.tool_input else []
-    state["output"] = decision.answer or ""
-    state["llm_calls"] = state.get("llm_calls", 0) + 1
-
+    # Handle tool_input - only set if tool is not none
+    tool_input = parsed.get("tool_input")
+    if tool_input and state["tool"] != "none":
+        # Append to tool_input instead of overwriting
+        if "tool_input" not in state or not state["tool_input"]:
+            state["tool_input"] = []
+        state["tool_input"].append(tool_input)
+    
+    print(f"Planner decision: tool={state['tool']}, tool_input={tool_input}, answer={answer}")
+    
     return state
