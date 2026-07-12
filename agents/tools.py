@@ -1,8 +1,12 @@
 from agents.state import AgentState
 from langchain_community.tools import DuckDuckGoSearchRun
-from typing import List
+from typing import Any, List
 from src.stagehand.get_image import get_image_link
 import asyncio
+import re
+import json
+
+from plugins.mcp_plugin import mcp_plugin
 
 
 # -------------------------
@@ -11,6 +15,141 @@ import asyncio
 def web_search(query: str) -> str:
     search = DuckDuckGoSearchRun()
     return search.run(query)
+
+
+def _tool_result_to_text(result: Any) -> str:
+    content = getattr(result, "content", result)
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif hasattr(item, "text"):
+                parts.append(str(item.text))
+            else:
+                parts.append(str(item))
+        return "\n".join(parts)
+    return str(content)
+
+
+def _extract_url(text: str) -> str | None:
+    match = re.search(r"https?://[^\s]+", text)
+    if not match:
+        return None
+    return match.group(0).rstrip(")]}.>,")
+
+
+def _extract_github_username(text: str) -> str | None:
+    match = re.search(r"github\.com/([^/?#\s]+)", text)
+    if not match:
+        return None
+    return match.group(1)
+
+
+def _extract_page_info(snapshot_text: str) -> tuple[str | None, str | None]:
+    title_match = re.search(r"Page Title:\s*(.+)", snapshot_text)
+    url_match = re.search(r"Page URL:\s*(.+)", snapshot_text)
+    title = title_match.group(1).strip() if title_match else None
+    url = url_match.group(1).strip() if url_match else None
+    return title, url
+
+
+def _extract_file_path(text: str) -> str | None:
+    windows_match = re.search(r"[A-Za-z]:\\[^\s\"'<>|]+", text)
+    if windows_match:
+        return windows_match.group(0).rstrip(".,)\"]}>")
+
+    unix_match = re.search(r"/[^\s\"'<>|]+", text)
+    if unix_match:
+        return unix_match.group(0).rstrip(".,)\"]}>")
+
+    return None
+
+
+def _format_file_read_result(path: str, content: str) -> str:
+    return f"File: {path}\n\n{content}"
+
+
+async def _open_and_capture_browser(query: str) -> str:
+    session = await mcp_plugin.create_session("playwright")
+
+    try:
+        url = _extract_url(query)
+        username = _extract_github_username(query) or (_extract_github_username(url) if url else None)
+
+        if url:
+            await session.call_tool("browser_navigate", {"url": url})
+
+        snapshot = await session.call_tool("browser_snapshot", {})
+        snapshot_text = _tool_result_to_text(snapshot)
+        title, current_url = _extract_page_info(snapshot_text)
+
+        if username and any(keyword in query.lower() for keyword in ["repo", "repository", "any repo", "go to repo"]):
+            repo_page = f"https://github.com/{username}?tab=repositories"
+            await session.call_tool("browser_navigate", {"url": repo_page})
+            repos_snapshot = await session.call_tool("browser_snapshot", {})
+            repos_text = _tool_result_to_text(repos_snapshot)
+
+            reserved = {
+                "repositories",
+                "followers",
+                "following",
+                "stars",
+                "sponsors",
+                "packages",
+                "projects",
+                "activity",
+                "orgs",
+            }
+            repo_match = re.search(
+                rf'- link "([^"]+)" \[ref=[^\]]+\].*?- /url: (/{re.escape(username)}/[^\s\]"]+)',
+                repos_text,
+                re.S,
+            )
+            if repo_match:
+                repo_href = repo_match.group(2).rstrip(")]}.>,")
+                repo_name = repo_href.rsplit("/", 1)[-1]
+                if repo_name not in reserved:
+                    repo_url = f"https://github.com{repo_href}"
+                    await session.call_tool("browser_navigate", {"url": repo_url})
+                    final_snapshot = await session.call_tool("browser_snapshot", {})
+                    final_text = _tool_result_to_text(final_snapshot)
+                    final_title, final_url = _extract_page_info(final_text)
+                    return f"Opened GitHub repo: {final_title or repo_name} ({final_url or repo_url})"
+
+            return f"Opened GitHub repositories page for {username}: {title or 'GitHub'} ({current_url or repo_page})"
+
+        return f"Opened page: {title or 'unknown title'} ({current_url or url or 'unknown url'})"
+    finally:
+        await mcp_plugin.close_session(session)
+
+
+async def _read_and_capture_file(query: str) -> str:
+    session = await mcp_plugin.create_session("filesystem")
+
+    try:
+        path = _extract_file_path(query)
+        if not path:
+            return "I could not find a file path in the request. Please provide an absolute path."
+
+        result = await session.call_tool("read_text_file", {"path": path})
+        text = _tool_result_to_text(result)
+
+        try:
+            payload = json.loads(text)
+            if isinstance(payload, dict) and "content" in payload:
+                text = str(payload["content"])
+        except json.JSONDecodeError:
+            pass
+
+        if not text.strip():
+            return f"I found the file path {path}, but the file appears empty or unreadable."
+
+        return _format_file_read_result(path, text)
+    finally:
+        await mcp_plugin.close_session(session)
 
 
 # -------------------------
@@ -103,5 +242,42 @@ def image_search_tool(state: AgentState) -> AgentState:
     else:
         print(f"Failed to fetch image for query: {query}")
         state["tool_output"].append(f"Could not find image for '{query}'")
+
+    return state
+
+
+def browser_tool(state: AgentState) -> AgentState:
+    """
+    Opens or navigates a browser page using the Playwright MCP server.
+    """
+    query = state["tool_input"][-1] if state.get("tool_input") else state["task"]
+
+    try:
+        result = asyncio.run(_open_and_capture_browser(query))
+        state["tool_output"].append(result)
+        print(f"Browser result: {result}")
+    except Exception as e:
+        error_message = f"Browser action failed for '{query}': {str(e)}"
+        print(error_message)
+        state["tool_output"].append(error_message)
+
+    return state
+
+
+def filesystem_tool(state: AgentState) -> AgentState:
+    """
+    Reads a local file using the filesystem MCP server.
+    """
+    query = state["tool_input"][-1] if state.get("tool_input") else state["task"]
+
+    try:
+        result = asyncio.run(_read_and_capture_file(query))
+        state["tool_output"].append(result)
+        state["output"] = result
+        print(f"Filesystem result: {result}")
+    except Exception as e:
+        error_message = f"Filesystem action failed for '{query}': {str(e)}"
+        print(error_message)
+        state["tool_output"].append(error_message)
 
     return state

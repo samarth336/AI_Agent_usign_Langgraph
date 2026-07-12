@@ -1,0 +1,22 @@
+mcpServers:
+  playwright:
+    command: npx
+    args:
+      - "@playwright/mcp@latest"
+  playwright_headless:
+    command: npx
+    args:
+      - "@playwright/mcp@latest"
+      - "--headless"
+  airbnb:
+    command: npx
+    args:
+      - "-y"
+      - "@openbnb/mcp-server-airbnb"
+  filesystem:
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-filesystem"
+      - "D:\\Projects\\LangGraph"
+

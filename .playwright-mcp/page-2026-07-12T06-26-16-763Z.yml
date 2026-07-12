@@ -1,0 +1,430 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - link "Skip to content" [ref=f1e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=f1e6]:
+      - heading "Navigation Menu" [level=2] [ref=f1e7]
+      - generic [ref=f1e8]:
+        - link "Homepage" [ref=f1e10] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e13]:
+          - navigation "Global" [ref=f1e16]:
+            - list [ref=f1e17]:
+              - listitem [ref=f1e18]:
+                - button "Platform" [ref=f1e20] [cursor=pointer]
+              - listitem [ref=f1e23]:
+                - button "Solutions" [ref=f1e25] [cursor=pointer]
+              - listitem [ref=f1e28]:
+                - button "Resources" [ref=f1e30] [cursor=pointer]
+              - listitem [ref=f1e33]:
+                - button "Open Source" [ref=f1e35] [cursor=pointer]
+              - listitem [ref=f1e38]:
+                - button "Enterprise" [ref=f1e40] [cursor=pointer]
+              - listitem [ref=f1e43]:
+                - link "Pricing" [ref=f1e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=f1e46]:
+            - button "Search or jump to…" [ref=f1e49] [cursor=pointer]
+            - link "Sign in" [ref=f1e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsamarth336%3Ftab%3Drepositories
+            - link "Sign up" [ref=f1e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2Fsamarth336&source=header
+            - button "Appearance settings" [ref=f1e58] [cursor=pointer]
+  - main [ref=f1e61]:
+    - generic [ref=f1e64]:
+      - generic [ref=f1e65]:
+        - generic:
+          - generic:
+            - generic:
+              - img "@samarth336"
+            - generic:
+              - strong: samarth336
+              - generic:
+                - generic:
+                  - link "Follow":
+                    - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsamarth336%3Ftab%3Drepositories
+      - navigation "User profile" [ref=f1e68]:
+        - link "Overview" [ref=f1e69] [cursor=pointer]:
+          - /url: /samarth336
+        - link "Repositories 36" [ref=f1e72] [cursor=pointer]:
+          - /url: /samarth336?tab=repositories
+          - text: Repositories
+          - generic "36" [ref=f1e75]
+        - link "Projects" [ref=f1e76] [cursor=pointer]:
+          - /url: /samarth336?tab=projects
+        - link "Packages" [ref=f1e79] [cursor=pointer]:
+          - /url: /samarth336?tab=packages
+        - link "Stars" [ref=f1e82] [cursor=pointer]:
+          - /url: /samarth336?tab=stars
+    - generic [ref=f1e86]:
+      - generic [ref=f1e88]:
+        - generic:
+          - generic:
+            - generic:
+              - img "@samarth336"
+            - generic:
+              - generic:
+                - strong: samarth336
+            - generic:
+              - generic:
+                - generic:
+                  - link "Follow":
+                    - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsamarth336%3Ftab%3Drepositories
+        - generic [ref=f1e89]:
+          - generic [ref=f1e90]:
+            - link [ref=f1e92] [cursor=pointer]:
+              - /url: https://avatars.githubusercontent.com/u/184629104?v=4
+              - img "View samarth336's full-sized avatar" [ref=f1e93]
+            - heading "Samarth Machindra Patil samarth336" [level=1] [ref=f1e95]:
+              - generic [ref=f1e96]: Samarth Machindra Patil
+              - generic [ref=f1e97]: samarth336
+          - generic [ref=f1e98]:
+            - link "Follow" [ref=f1e105] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsamarth336%3Ftab%3Drepositories
+            - generic [ref=f1e106]:
+              - generic [ref=f1e107]: Recently completed my B-Tech in ENTC from Walchand Institute of Technology, Solapur with CGPA of 9.46. Enjoying building AI systems.
+              - generic [ref=f1e110]:
+                - link "0 followers" [ref=f1e111] [cursor=pointer]:
+                  - /url: https://github.com/samarth336?tab=followers
+                - text: ·
+                - link "2 following" [ref=f1e114] [cursor=pointer]:
+                  - /url: https://github.com/samarth336?tab=following
+              - list [ref=f1e115]:
+                - 'listitem "Organization: Sandvik Indian Innovations" [ref=f1e116]':
+                  - generic [ref=f1e119]: Sandvik Indian Innovations
+                - 'listitem "Home location: Pune" [ref=f1e121]':
+                  - generic [ref=f1e124]: Pune
+                - listitem [ref=f1e125]:
+                  - img "LinkedIn" [ref=f1e126]
+                  - link "in/patilsamarth" [ref=f1e129] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/patilsamarth/
+          - generic [ref=f1e130]:
+            - heading "Highlights" [level=2] [ref=f1e131]
+            - list [ref=f1e132]:
+              - listitem [ref=f1e133]:
+                - 'generic "Label: Pro" [ref=f1e136]': Pro
+          - button "Block or report user" [ref=f1e138] [cursor=pointer]
+      - generic [ref=f1e143]:
+        - search "Repositories" [ref=f1e146]:
+          - generic [ref=f1e147]:
+            - searchbox "Find a repository…" [ref=f1e149]
+            - generic [ref=f1e150]:
+              - group [ref=f1e151]:
+                - button "Type" [ref=f1e152] [cursor=pointer]
+              - group [ref=f1e154]:
+                - button "Language" [ref=f1e155] [cursor=pointer]
+              - group [ref=f1e157]:
+                - button "Sort" [ref=f1e158] [cursor=pointer]
+        - generic [ref=f1e160]:
+          - list [ref=f1e161]:
+            - listitem [ref=f1e162]:
+              - generic [ref=f1e163]:
+                - heading "MCPServer Public" [level=3] [ref=f1e165]:
+                  - link "MCPServer" [ref=f1e166] [cursor=pointer]:
+                    - /url: /samarth336/MCPServer
+                  - generic [ref=f1e167]: Public
+                - paragraph [ref=f1e169]: Exploring MCP server integration, creation
+                - generic [ref=f1e170]: Updated Jul 12, 202617 minutes ago
+            - listitem [ref=f1e172]:
+              - generic [ref=f1e173]:
+                - heading "DSA Public" [level=3] [ref=f1e175]:
+                  - link "DSA" [ref=f1e176] [cursor=pointer]:
+                    - /url: /samarth336/DSA
+                  - generic [ref=f1e177]: Public
+                - paragraph [ref=f1e179]: This repo contains solved DSA questions
+                - generic [ref=f1e180]:
+                  - generic [ref=f1e181]: Jupyter Notebook
+                  - text: Updated Jul 11, 202611 hours ago
+            - listitem [ref=f1e184]:
+              - generic [ref=f1e185]:
+                - heading "samarth336 Public" [level=3] [ref=f1e187]:
+                  - link "samarth336" [ref=f1e188] [cursor=pointer]:
+                    - /url: /samarth336/samarth336
+                  - generic [ref=f1e189]: Public
+                - generic [ref=f1e190]: Updated Jun 3, 2026on Jun 3
+            - listitem [ref=f1e192]:
+              - generic [ref=f1e193]:
+                - heading "DRONE-SECURITY-ANALYST Public" [level=3] [ref=f1e195]:
+                  - link "DRONE-SECURITY-ANALYST" [ref=f1e196] [cursor=pointer]:
+                    - /url: /samarth336/DRONE-SECURITY-ANALYST
+                  - generic [ref=f1e197]: Public
+                - paragraph [ref=f1e199]: Build drone security analyst system to monitor security using drone security
+                - generic [ref=f1e200]:
+                  - generic [ref=f1e201]: Jupyter Notebook
+                  - text: Updated Apr 6, 2026on Apr 7
+            - listitem [ref=f1e204]:
+              - generic [ref=f1e205]:
+                - heading "AI-for-loacal-artisans Public" [level=3] [ref=f1e207]:
+                  - link "AI-for-loacal-artisans" [ref=f1e208] [cursor=pointer]:
+                    - /url: /samarth336/AI-for-loacal-artisans
+                  - generic [ref=f1e209]: Public
+                - generic [ref=f1e210]:
+                  - generic [ref=f1e211]: TypeScript
+                  - text: Updated Mar 7, 2026on Mar 7
+            - listitem [ref=f1e214]:
+              - generic [ref=f1e215]:
+                - heading "AI_Agent_usign_Langgraph Public" [level=3] [ref=f1e217]:
+                  - link "AI_Agent_usign_Langgraph" [ref=f1e218] [cursor=pointer]:
+                    - /url: /samarth336/AI_Agent_usign_Langgraph
+                  - generic [ref=f1e219]: Public
+                - paragraph [ref=f1e221]: Building AI agent using LangGraph.
+                - generic [ref=f1e222]:
+                  - generic [ref=f1e223]: Jupyter Notebook
+                  - text: Updated Jan 14, 2026on Jan 14
+            - listitem [ref=f1e226]:
+              - generic [ref=f1e227]:
+                - heading "github_clone Public" [level=3] [ref=f1e229]:
+                  - link "github_clone" [ref=f1e230] [cursor=pointer]:
+                    - /url: /samarth336/github_clone
+                  - generic [ref=f1e231]: Public
+                - generic [ref=f1e232]:
+                  - generic [ref=f1e233]: JavaScript
+                  - text: Updated Jun 28, 2025on Jun 28, 2025
+            - listitem [ref=f1e236]:
+              - generic [ref=f1e237]:
+                - heading "portfolio Public" [level=3] [ref=f1e239]:
+                  - link "portfolio" [ref=f1e240] [cursor=pointer]:
+                    - /url: /samarth336/portfolio
+                  - generic [ref=f1e241]: Public
+                - paragraph [ref=f1e243]: My portfolio website
+                - generic [ref=f1e244]:
+                  - generic [ref=f1e245]: JavaScript
+                  - text: Updated Jun 27, 2025on Jun 27, 2025
+            - listitem [ref=f1e248]:
+              - generic [ref=f1e249]:
+                - generic [ref=f1e250]:
+                  - heading "scraping-scripts Public" [level=3] [ref=f1e251]:
+                    - link "scraping-scripts" [ref=f1e252] [cursor=pointer]:
+                      - /url: /samarth336/scraping-scripts
+                    - generic [ref=f1e253]: Public
+                  - generic [ref=f1e254]:
+                    - text: Forked from
+                    - link "HashSlap-Summer-of-Code/scraping-scripts" [ref=f1e255] [cursor=pointer]:
+                      - /url: /HashSlap-Summer-of-Code/scraping-scripts
+                - paragraph [ref=f1e257]: Repo with scraping scripts to scrape data from websites!
+                - generic [ref=f1e258]:
+                  - generic [ref=f1e259]: Python
+                  - generic [ref=f1e261]: MIT License
+                  - text: Updated Jun 21, 2025on Jun 21, 2025
+            - listitem [ref=f1e265]:
+              - generic [ref=f1e266]:
+                - heading "Clone-Project-Zerodha Public" [level=3] [ref=f1e268]:
+                  - link "Clone-Project-Zerodha" [ref=f1e269] [cursor=pointer]:
+                    - /url: /samarth336/Clone-Project-Zerodha
+                  - generic [ref=f1e270]: Public
+                - generic [ref=f1e271]:
+                  - generic [ref=f1e272]: JavaScript
+                  - text: Updated Jun 19, 2025on Jun 19, 2025
+            - listitem [ref=f1e275]:
+              - generic [ref=f1e276]:
+                - heading "new_stagehand Public" [level=3] [ref=f1e278]:
+                  - link "new_stagehand" [ref=f1e279] [cursor=pointer]:
+                    - /url: /samarth336/new_stagehand
+                  - generic [ref=f1e280]: Public
+                - generic [ref=f1e281]:
+                  - generic [ref=f1e282]: HTML
+                  - text: Updated Jun 18, 2025on Jun 18, 2025
+            - listitem [ref=f1e285]:
+              - generic [ref=f1e286]:
+                - heading "stagehand Public" [level=3] [ref=f1e288]:
+                  - link "stagehand" [ref=f1e289] [cursor=pointer]:
+                    - /url: /samarth336/stagehand
+                  - generic [ref=f1e290]: Public
+                - generic [ref=f1e291]:
+                  - generic [ref=f1e292]: HTML
+                  - text: Updated Jun 15, 2025on Jun 15, 2025
+            - listitem [ref=f1e295]:
+              - generic [ref=f1e296]:
+                - heading "major-project-airbnb Public" [level=3] [ref=f1e298]:
+                  - link "major-project-airbnb" [ref=f1e299] [cursor=pointer]:
+                    - /url: /samarth336/major-project-airbnb
+                  - generic [ref=f1e300]: Public
+                - generic [ref=f1e301]:
+                  - generic [ref=f1e302]: JavaScript
+                  - text: Updated May 31, 2025on May 31, 2025
+            - listitem [ref=f1e305]:
+              - generic [ref=f1e306]:
+                - heading "Smart-Grocery-Recommender Public" [level=3] [ref=f1e308]:
+                  - link "Smart-Grocery-Recommender" [ref=f1e309] [cursor=pointer]:
+                    - /url: /samarth336/Smart-Grocery-Recommender
+                  - generic [ref=f1e310]: Public
+                - generic [ref=f1e311]:
+                  - generic [ref=f1e312]: Jupyter Notebook
+                  - text: Updated May 15, 2025on May 15, 2025
+            - listitem [ref=f1e315]:
+              - generic [ref=f1e316]:
+                - heading "poe- Public" [level=3] [ref=f1e318]:
+                  - link "poe-" [ref=f1e319] [cursor=pointer]:
+                    - /url: /samarth336/poe-
+                  - generic [ref=f1e320]: Public
+                - generic [ref=f1e321]: Updated Apr 28, 2025on Apr 29, 2025
+            - listitem [ref=f1e323]:
+              - generic [ref=f1e324]:
+                - heading "logstrike1 Public" [level=3] [ref=f1e326]:
+                  - link "logstrike1" [ref=f1e327] [cursor=pointer]:
+                    - /url: /samarth336/logstrike1
+                  - generic [ref=f1e328]: Public
+                - generic [ref=f1e329]:
+                  - generic [ref=f1e330]: TypeScript
+                  - text: Updated Apr 20, 2025on Apr 20, 2025
+            - listitem [ref=f1e333]:
+              - generic [ref=f1e334]:
+                - heading "logstrike Public" [level=3] [ref=f1e336]:
+                  - link "logstrike" [ref=f1e337] [cursor=pointer]:
+                    - /url: /samarth336/logstrike
+                  - generic [ref=f1e338]: Public
+                - generic [ref=f1e339]: Updated Apr 20, 2025on Apr 20, 2025
+            - listitem [ref=f1e341]:
+              - generic [ref=f1e342]:
+                - heading "skills-getting-started-with-github-copilot Public" [level=3] [ref=f1e344]:
+                  - link "skills-getting-started-with-github-copilot" [ref=f1e345] [cursor=pointer]:
+                    - /url: /samarth336/skills-getting-started-with-github-copilot
+                  - generic [ref=f1e346]: Public
+                - paragraph [ref=f1e348]: "Exercise: Get started using GitHub Copilot"
+                - generic [ref=f1e349]:
+                  - generic [ref=f1e350]: JavaScript
+                  - generic [ref=f1e352]: MIT License
+                  - text: Updated Apr 4, 2025on Apr 4, 2025
+            - listitem [ref=f1e356]:
+              - generic [ref=f1e357]:
+                - heading "skills-copilot-codespaces-vscode Public" [level=3] [ref=f1e359]:
+                  - link "skills-copilot-codespaces-vscode" [ref=f1e360] [cursor=pointer]:
+                    - /url: /samarth336/skills-copilot-codespaces-vscode
+                  - generic [ref=f1e361]: Public
+                - paragraph [ref=f1e363]: My clone repository
+                - generic [ref=f1e364]:
+                  - generic [ref=f1e365]: MIT License
+                  - text: Updated Apr 4, 2025on Apr 4, 2025
+            - listitem [ref=f1e369]:
+              - generic [ref=f1e370]:
+                - heading "sinhgad-hackathon Public" [level=3] [ref=f1e372]:
+                  - link "sinhgad-hackathon" [ref=f1e373] [cursor=pointer]:
+                    - /url: /samarth336/sinhgad-hackathon
+                  - generic [ref=f1e374]: Public
+                - generic [ref=f1e375]:
+                  - generic [ref=f1e376]: JavaScript
+                  - text: Updated Mar 30, 2025on Mar 30, 2025
+            - listitem [ref=f1e379]:
+              - generic [ref=f1e380]:
+                - heading "ise Public" [level=3] [ref=f1e382]:
+                  - link "ise" [ref=f1e383] [cursor=pointer]:
+                    - /url: /samarth336/ise
+                  - generic [ref=f1e384]: Public
+                - generic [ref=f1e385]: Updated Mar 13, 2025on Mar 13, 2025
+            - listitem [ref=f1e387]:
+              - generic [ref=f1e388]:
+                - heading "ise2 Public" [level=3] [ref=f1e390]:
+                  - link "ise2" [ref=f1e391] [cursor=pointer]:
+                    - /url: /samarth336/ise2
+                  - generic [ref=f1e392]: Public
+                - generic [ref=f1e393]: Updated Mar 13, 2025on Mar 13, 2025
+            - listitem [ref=f1e395]:
+              - generic [ref=f1e396]:
+                - heading "practical Public" [level=3] [ref=f1e398]:
+                  - link "practical" [ref=f1e399] [cursor=pointer]:
+                    - /url: /samarth336/practical
+                  - generic [ref=f1e400]: Public
+                - generic [ref=f1e401]: Updated Mar 13, 2025on Mar 13, 2025
+            - listitem [ref=f1e403]:
+              - generic [ref=f1e404]:
+                - heading "Let-s-Code-using-ViteReact Public" [level=3] [ref=f1e406]:
+                  - link "Let-s-Code-using-ViteReact" [ref=f1e407] [cursor=pointer]:
+                    - /url: /samarth336/Let-s-Code-using-ViteReact
+                  - generic [ref=f1e408]: Public
+                - generic [ref=f1e409]:
+                  - generic [ref=f1e410]: JavaScript
+                  - text: Updated Mar 2, 2025on Mar 2, 2025
+            - listitem [ref=f1e413]:
+              - generic [ref=f1e414]:
+                - heading "webtopia Public" [level=3] [ref=f1e416]:
+                  - link "webtopia" [ref=f1e417] [cursor=pointer]:
+                    - /url: /samarth336/webtopia
+                  - generic [ref=f1e418]: Public
+                - generic [ref=f1e419]:
+                  - generic [ref=f1e420]: HTML
+                  - text: Updated Feb 28, 2025on Feb 28, 2025
+            - listitem [ref=f1e423]:
+              - generic [ref=f1e424]:
+                - heading "weatherApp Public" [level=3] [ref=f1e426]:
+                  - link "weatherApp" [ref=f1e427] [cursor=pointer]:
+                    - /url: /samarth336/weatherApp
+                  - generic [ref=f1e428]: Public
+                - generic [ref=f1e429]:
+                  - generic [ref=f1e430]: CSS
+                  - text: Updated Feb 27, 2025on Feb 27, 2025
+            - listitem [ref=f1e433]:
+              - generic [ref=f1e434]:
+                - heading "edutech_training Public" [level=3] [ref=f1e436]:
+                  - link "edutech_training" [ref=f1e437] [cursor=pointer]:
+                    - /url: /samarth336/edutech_training
+                  - generic [ref=f1e438]: Public
+                - generic [ref=f1e439]:
+                  - generic [ref=f1e440]: Jupyter Notebook
+                  - text: Updated Feb 25, 2025on Feb 25, 2025
+            - listitem [ref=f1e443]:
+              - generic [ref=f1e444]:
+                - heading "web-development Public" [level=3] [ref=f1e446]:
+                  - link "web-development" [ref=f1e447] [cursor=pointer]:
+                    - /url: /samarth336/web-development
+                  - generic [ref=f1e448]: Public
+                - generic [ref=f1e449]:
+                  - generic [ref=f1e450]: JavaScript
+                  - text: Updated Feb 21, 2025on Feb 22, 2025
+            - listitem [ref=f1e453]:
+              - generic [ref=f1e454]:
+                - heading "cmr-frontend Public" [level=3] [ref=f1e456]:
+                  - link "cmr-frontend" [ref=f1e457] [cursor=pointer]:
+                    - /url: /samarth336/cmr-frontend
+                  - generic [ref=f1e458]: Public
+                - generic [ref=f1e459]:
+                  - generic [ref=f1e460]: JavaScript
+                  - text: Updated Feb 15, 2025on Feb 16, 2025
+            - listitem [ref=f1e463]:
+              - generic [ref=f1e464]:
+                - heading "TextUtils Public" [level=3] [ref=f1e466]:
+                  - link "TextUtils" [ref=f1e467] [cursor=pointer]:
+                    - /url: /samarth336/TextUtils
+                  - generic [ref=f1e468]: Public
+                - generic [ref=f1e469]:
+                  - generic [ref=f1e470]: JavaScript
+                  - text: Updated Feb 5, 2025on Feb 6, 2025
+          - navigation "Pagination" [ref=f1e474]:
+            - link "Previous page" [disabled] [ref=f1e475]: Previous
+            - link "Next page" [ref=f1e476] [cursor=pointer]:
+              - /url: /samarth336?page=2&tab=repositories
+              - text: Next
+  - contentinfo [ref=f1e477]:
+    - heading "Footer" [level=2] [ref=f1e478]
+    - generic [ref=f1e479]:
+      - generic [ref=f1e480]:
+        - link "GitHub Homepage" [ref=f1e481] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=f1e484]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=f1e485]:
+        - heading "Footer navigation" [level=3] [ref=f1e486]
+        - list "Footer navigation" [ref=f1e487]:
+          - listitem [ref=f1e488]:
+            - link "Terms" [ref=f1e489] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=f1e490]:
+            - link "Privacy" [ref=f1e491] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=f1e492]:
+            - link "Security" [ref=f1e493] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=f1e494]:
+            - link "Status" [ref=f1e495] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=f1e496]:
+            - link "Community" [ref=f1e497] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=f1e498]:
+            - link "Docs" [ref=f1e499] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=f1e500]:
+            - link "Contact" [ref=f1e501] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=f1e502]:
+            - button "Manage cookies" [ref=f1e504] [cursor=pointer]
+          - listitem [ref=f1e505]:
+            - button "Do not share my personal information" [ref=f1e507] [cursor=pointer]

@@ -5,7 +5,7 @@ import os
 
 from agents.state import AgentState
 from agents.planner import planner
-from agents.tools import search_tool
+from agents.tools import search_tool, browser_tool, filesystem_tool
 from agents.response_generator import response_generator
 
 
@@ -14,6 +14,12 @@ def route_from_planner(state: AgentState) -> str:
     if tool == "search":
         print("Routing to search tool")
         return "search"
+    if tool == "browser":
+        print("Routing to browser tool")
+        return "browser"
+    if tool == "filesystem":
+        print("Routing to filesystem tool")
+        return "filesystem"
     return END
 
 
@@ -22,6 +28,8 @@ def build_agent():
 
     builder.add_node("planner", planner)
     builder.add_node("search", search_tool)
+    builder.add_node("browser", browser_tool)
+    builder.add_node("filesystem", filesystem_tool)
     builder.add_node("response_generator", response_generator)
 
     builder.set_entry_point("planner")
@@ -31,11 +39,15 @@ def build_agent():
     route_from_planner,
     {
         "search": "search",
+        "browser": "browser",
+        "filesystem": "filesystem",
         END: END
     }
 )
 
     builder.add_edge("search", "response_generator")
+    builder.add_edge("browser", "response_generator")
+    builder.add_edge("filesystem", "response_generator")
     builder.add_edge("response_generator", END)
 
     # -------------------------

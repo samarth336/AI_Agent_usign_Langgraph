@@ -1,0 +1,204 @@
+- generic [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - link "Skip to content" [ref=f2e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=f2e6]:
+      - heading "Navigation Menu" [level=2] [ref=f2e7]
+      - generic [ref=f2e8]:
+        - link "Homepage" [ref=f2e10] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e13]:
+          - navigation "Global" [ref=f2e16]:
+            - list [ref=f2e17]:
+              - listitem [ref=f2e18]:
+                - button "Platform" [ref=f2e20] [cursor=pointer]
+              - listitem [ref=f2e23]:
+                - button "Solutions" [ref=f2e25] [cursor=pointer]
+              - listitem [ref=f2e28]:
+                - button "Resources" [ref=f2e30] [cursor=pointer]
+              - listitem [ref=f2e33]:
+                - button "Open Source" [ref=f2e35] [cursor=pointer]
+              - listitem [ref=f2e38]:
+                - button "Enterprise" [ref=f2e40] [cursor=pointer]
+              - listitem [ref=f2e43]:
+                - link "Pricing" [ref=f2e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=f2e46]:
+            - button "Search or jump to…" [ref=f2e49] [cursor=pointer]
+            - link "Sign in" [ref=f2e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsamarth336%2FMCPServer
+            - link "Sign up" [ref=f2e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=samarth336%2FMCPServer
+            - button "Appearance settings" [ref=f2e58] [cursor=pointer]
+  - main [ref=f2e62]:
+    - generic [ref=f2e63]:
+      - generic [ref=f2e64]:
+        - generic [ref=f2e66]:
+          - link "samarth336" [ref=f2e70] [cursor=pointer]:
+            - /url: /samarth336
+          - generic [ref=f2e71]: /
+          - strong [ref=f2e72]:
+            - link "MCPServer" [ref=f2e73] [cursor=pointer]:
+              - /url: /samarth336/MCPServer
+          - generic [ref=f2e74]: Public
+        - generic [ref=f2e75]:
+          - list:
+            - listitem [ref=f2e76]:
+              - link "You must be signed in to change notification settings" [ref=f2e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsamarth336%2FMCPServer
+                - text: Notifications
+            - listitem [ref=f2e80]:
+              - link "Fork 0" [ref=f2e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsamarth336%2FMCPServer
+                - text: Fork
+                - generic "0" [ref=f2e84]
+            - listitem [ref=f2e85]:
+              - link "You must be signed in to star a repository" [ref=f2e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsamarth336%2FMCPServer
+                - text: Star
+                - generic "0 users starred this repository" [ref=f2e90]: "0"
+      - navigation "Repository" [ref=f2e91]:
+        - list [ref=f2e92]:
+          - listitem [ref=f2e93]:
+            - link "Code" [ref=f2e94] [cursor=pointer]:
+              - /url: /samarth336/MCPServer
+          - listitem [ref=f2e98]:
+            - link "Issues" [ref=f2e99] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/issues
+          - listitem [ref=f2e104]:
+            - link "Pull requests" [ref=f2e105] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/pulls
+          - listitem [ref=f2e109]:
+            - link "Actions" [ref=f2e110] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/actions
+          - listitem [ref=f2e114]:
+            - link "Projects" [ref=f2e115] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/projects
+          - listitem [ref=f2e119]:
+            - link "Security and quality" [ref=f2e120] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/security
+          - listitem [ref=f2e124]:
+            - link "Insights" [ref=f2e125] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/pulse
+    - generic [ref=f2e141]:
+      - heading "samarth336/MCPServer" [level=1] [ref=f2e143]
+      - generic [ref=f2e144]:
+        - generic [ref=f2e147]:
+          - generic [ref=f2e148]:
+            - generic [ref=f2e149]:
+              - button "main branch" [ref=f2e151] [cursor=pointer]:
+                - generic [ref=f2e152]: main
+              - generic [ref=f2e160]:
+                - link "Go to Branches page" [ref=f2e161] [cursor=pointer]:
+                  - /url: /samarth336/MCPServer/branches
+                - link "Go to Tags page" [ref=f2e164] [cursor=pointer]:
+                  - /url: /samarth336/MCPServer/tags
+            - generic [ref=f2e167]:
+              - combobox "Go to file" [ref=f2e175]
+              - button "Code" [ref=f2e176] [cursor=pointer]
+          - generic [ref=f2e179]:
+            - generic [ref=f2e180]:
+              - heading "Folders and files" [level=2] [ref=f2e181]
+              - table "Folders and files" [ref=f2e182]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=f2e183]:
+                  - row [ref=f2e184]:
+                    - cell "Latest commit History 1 Commit" [ref=f2e185]:
+                      - generic [ref=f2e186]:
+                        - heading "Latest commit" [level=2] [ref=f2e187]
+                        - generic [ref=f2e190]:
+                          - heading "History" [level=2] [ref=f2e191]
+                          - link "1 Commit" [ref=f2e192] [cursor=pointer]:
+                            - /url: /samarth336/MCPServer/commits/main/
+                  - row "README.md, (File)" [ref=f2e195]:
+                    - cell [ref=f2e196]:
+                      - link "README.md, (File)" [ref=f2e203] [cursor=pointer]:
+                        - /url: /samarth336/MCPServer/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=f2e204]
+                    - cell [ref=f2e206]
+            - generic [ref=f2e211]:
+              - heading "Repository files navigation" [level=2] [ref=f2e212]
+              - navigation "Repository files" [ref=f2e213]:
+                - list [ref=f2e214]:
+                  - listitem [ref=f2e215]:
+                    - link "README" [ref=f2e216] [cursor=pointer]:
+                      - /url: "#"
+        - generic [ref=f2e225]:
+          - generic [ref=f2e228]:
+            - heading "About" [level=2] [ref=f2e229]
+            - paragraph [ref=f2e230]: Exploring MCP server integration, creation
+            - link "Activity" [ref=f2e232] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/activity
+            - heading "Stars" [level=3] [ref=f2e235]
+            - generic [ref=f2e237]:
+              - strong [ref=f2e240]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=f2e241]
+            - generic [ref=f2e243]:
+              - strong [ref=f2e246]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=f2e247]
+            - link [ref=f2e249] [cursor=pointer]:
+              - /url: /samarth336/MCPServer/forks
+              - strong [ref=f2e252]: "0"
+              - text: forks
+            - link "Report repository" [ref=f2e254] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsamarth336%2FMCPServer&report=samarth336+%28user%29
+          - generic [ref=f2e256]:
+            - heading [level=2] [ref=f2e257]:
+              - link "Releases" [ref=f2e258] [cursor=pointer]:
+                - /url: /samarth336/MCPServer/releases
+            - generic [ref=f2e259]: No releases published
+          - generic "Loading latest packages" [ref=f2e262]:
+            - heading [level=2] [ref=f2e263]:
+              - link "Packages" [ref=f2e264] [cursor=pointer]:
+                - /url: /users/samarth336/packages?repo_name=MCPServer
+          - generic "Loading contributors" [ref=f2e276]:
+            - generic:
+              - heading [level=2] [ref=f2e277]:
+                - link "Contributors" [ref=f2e278] [cursor=pointer]:
+                  - /url: /samarth336/MCPServer/graphs/contributors
+              - list [ref=f2e279]:
+                - listitem [ref=f2e280]
+                - listitem [ref=f2e282]
+                - listitem [ref=f2e284]
+  - contentinfo [ref=f2e287]:
+    - heading "Footer" [level=2] [ref=f2e288]
+    - generic [ref=f2e289]:
+      - generic [ref=f2e290]:
+        - link "GitHub Homepage" [ref=f2e291] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=f2e294]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=f2e295]:
+        - heading "Footer navigation" [level=3] [ref=f2e296]
+        - list "Footer navigation" [ref=f2e297]:
+          - listitem [ref=f2e298]:
+            - link "Terms" [ref=f2e299] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=f2e300]:
+            - link "Privacy" [ref=f2e301] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=f2e302]:
+            - link "Security" [ref=f2e303] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=f2e304]:
+            - link "Status" [ref=f2e305] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=f2e306]:
+            - link "Community" [ref=f2e307] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=f2e308]:
+            - link "Docs" [ref=f2e309] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=f2e310]:
+            - link "Contact" [ref=f2e311] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=f2e312]:
+            - button "Manage cookies" [ref=f2e314] [cursor=pointer]
+          - listitem [ref=f2e315]:
+            - button "Do not share my personal information" [ref=f2e317] [cursor=pointer]

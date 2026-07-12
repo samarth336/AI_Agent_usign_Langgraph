@@ -1,0 +1,1003 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Guide" [active] [ref=e9] [cursor=pointer]
+          - generic [ref=e13]:
+            - link "YouTube Home" [ref=e14] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e20]: IN
+          - button "Skip navigation" [ref=e24] [cursor=pointer]
+        - generic [ref=e28]:
+          - search [ref=e29]:
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - combobox "Search" [expanded] [ref=e34]: songs
+                - button "Clear search query" [ref=e36] [cursor=pointer]
+              - button "Search" [ref=e43] [cursor=pointer]
+          - generic [ref=e48]:
+            - button "Search with your voice" [ref=e50] [cursor=pointer]
+            - tooltip "tooltip"
+        - generic [ref=e55]:
+          - button "Settings" [ref=e60] [cursor=pointer]
+          - link "Sign in" [ref=e66] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fresults%253Fsearch_query%253Dsongs&hl=en&ec=65620
+    - navigation [ref=e70]:
+      - generic [ref=e71]:
+        - link "Home" [ref=e73] [cursor=pointer]:
+          - /url: /
+        - link "Shorts" [ref=e79] [cursor=pointer]:
+          - /url: /shorts/
+        - link "Subscriptions" [ref=e85] [cursor=pointer]:
+          - /url: /feed/subscriptions
+        - link "You" [ref=e91] [cursor=pointer]:
+          - /url: /feed/you
+    - generic [ref=e96]:
+      - main [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e100]:
+            - tablist [ref=e105]:
+              - tab "All" [selected] [ref=e109] [cursor=pointer]
+              - tab "Shorts" [ref=e118] [cursor=pointer]
+              - tab "Unwatched" [ref=e127] [cursor=pointer]
+              - tab "Watched" [ref=e136] [cursor=pointer]
+              - tab "Videos" [ref=e145] [cursor=pointer]
+              - tab "Recently uploaded" [ref=e154] [cursor=pointer]
+              - tab "Live" [ref=e163] [cursor=pointer]
+            - generic [ref=e170]:
+              - button "Search filters" [ref=e172] [cursor=pointer]:
+                - generic: Filters
+              - tooltip "tooltip"
+          - generic [ref=e181]:
+            - generic [ref=e183]:
+              - link [ref=e185] [cursor=pointer]:
+                - /url: /watch?v=KXs2zgqLpVk&list=RDKXs2zgqLpVk&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                - img [ref=e190]:
+                  - generic [ref=e194]: 3:05
+                - generic: Now playing
+              - generic [ref=e195] [cursor=pointer]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]:
+                    - heading [level=3] [ref=e198]:
+                      - link "Samjhawan - 8K/4K Music Video | Arijit Singh, Shreya G | Varun D, Alia | Humpty Sharma Ki Dulhania 3 minutes, 5 seconds" [ref=e199]:
+                        - /url: /watch?v=KXs2zgqLpVk&list=RDKXs2zgqLpVk&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Samjhawan - 8K/4K Music Video | Arijit Singh, Shreya G | Varun D, Alia | Humpty Sharma Ki Dulhania
+                    - button "Action menu" [ref=e203]
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: 226K views
+                    - generic [ref=e211]: •21 hours ago
+                - generic [ref=e212]:
+                  - link "Go to channel Sony Music India" [ref=e213]:
+                    - /url: /@SonyMusicIndia
+                  - generic [ref=e215]:
+                    - link "Sony Music India" [ref=e219]:
+                      - /url: /@SonyMusicIndia
+                    - img "Verified" [ref=e224]
+                - generic [ref=e228]:
+                  - generic [ref=e229]: Experience the timeless romance of Samjhawan from Humpty Sharma Ki Dulhania in breathtaking 8K/4K Music Video. Featuring ...
+                  - tooltip "tooltip"
+                - generic [ref=e231]:
+                  - img "New" [ref=e234]
+                  - img "8K" [ref=e238]
+            - generic [ref=e241]:
+              - link [ref=e243] [cursor=pointer]:
+                - /url: /watch?v=cSOvELyZbYY&list=RDcSOvELyZbYY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                - img [ref=e248]:
+                  - generic [ref=e252]: 3:30
+                - generic: Now playing
+              - generic [ref=e253] [cursor=pointer]:
+                - generic [ref=e254]:
+                  - generic [ref=e255]:
+                    - heading [level=3] [ref=e256]:
+                      - link "Kabhi Kabhi Aditi 8K Video Song | Jaane Tu Ya Jaane Na | Imran Khan, Genelia Dsouza | A.R. Rahman 3 minutes, 30 seconds" [ref=e257]:
+                        - /url: /watch?v=cSOvELyZbYY&list=RDcSOvELyZbYY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Kabhi Kabhi Aditi 8K Video Song | Jaane Tu Ya Jaane Na | Imran Khan, Genelia Dsouza | A.R. Rahman
+                    - button "Action menu" [ref=e261]
+                  - generic [ref=e267]:
+                    - generic [ref=e268]: 73K views
+                    - generic [ref=e269]: •20 hours ago
+                - generic [ref=e270]:
+                  - link "Go to channel T-Series" [ref=e271]:
+                    - /url: /@tseries
+                  - generic [ref=e273]:
+                    - link "T-Series" [ref=e277]:
+                      - /url: /@tseries
+                    - img "Verified" [ref=e282]
+                - generic [ref=e286]:
+                  - generic [ref=e287]: "Presenting the 8K Full Video Song \"Pappu Can't Dance\" from the film \"Jaane Tu Ya Jaane Na\". Credits: Singer: Rashid Ali Music: ..."
+                  - tooltip "tooltip"
+                - generic [ref=e289]:
+                  - img "New" [ref=e292]
+                  - img "8K" [ref=e296]
+            - generic [ref=e299]:
+              - heading "Top news" [level=2] [ref=e302]
+              - generic [ref=e306]:
+                - generic [ref=e309]:
+                  - generic [ref=e311]:
+                    - link [ref=e313] [cursor=pointer]:
+                      - /url: /watch?v=koGsI3IfV8s&pp=ygUFc29uZ3M%3D
+                      - img [ref=e318]:
+                        - generic [ref=e319]: 3:43
+                      - generic: Now playing
+                    - generic [ref=e320] [cursor=pointer]:
+                      - link "Go to channel Asianet News English" [ref=e321]:
+                        - /url: /@asianetnewsenglish
+                      - generic [ref=e323]:
+                        - generic [ref=e324]:
+                          - heading [level=3] [ref=e325]:
+                            - link "अरिजीत सिंह के 20 बेहतरीन मॉनसून गाने | सबसे रोमांटिक बारिश की प्लेलिस्ट 3 minutes, 43 seconds" [ref=e326]:
+                              - /url: /watch?v=koGsI3IfV8s&pp=ygUFc29uZ3M%3D
+                              - text: अरिजीत सिंह के 20 बेहतरीन मॉनसून गाने | सबसे रोमांटिक बारिश की प्लेलिस्ट
+                          - generic [ref=e328]:
+                            - generic [ref=e330]:
+                              - generic "Asianet News English" [ref=e333]:
+                                - link "Asianet News English" [ref=e334]:
+                                  - /url: /@asianetnewsenglish
+                              - img "Verified" [ref=e339]
+                            - generic [ref=e343]:
+                              - generic [ref=e344]: 32K views
+                              - generic [ref=e345]: •17 hours ago
+                        - img "New" [ref=e350]
+                      - button "Action menu" [ref=e354]
+                  - generic [ref=e359]:
+                    - link [ref=e361] [cursor=pointer]:
+                      - /url: /watch?v=HAdDT3yw3nU&pp=ygUFc29uZ3M%3D
+                      - img [ref=e366]:
+                        - generic [ref=e367]: 6:32
+                      - generic: Now playing
+                    - generic [ref=e368] [cursor=pointer]:
+                      - link "Go to channel India Today" [ref=e369]:
+                        - /url: /@indiatoday
+                      - generic [ref=e371]:
+                        - generic [ref=e372]:
+                          - heading [level=3] [ref=e373]:
+                            - link "Tabaahi Video Song Review | Did Yash Finally Turn the Tables? | Kiara Advani | Vishal Mishra 6 minutes, 32 seconds" [ref=e374]:
+                              - /url: /watch?v=HAdDT3yw3nU&pp=ygUFc29uZ3M%3D
+                              - text: Tabaahi Video Song Review | Did Yash Finally Turn the Tables? | Kiara Advani | Vishal Mishra
+                          - generic [ref=e376]:
+                            - generic [ref=e378]:
+                              - generic "India Today" [ref=e381]:
+                                - link "India Today" [ref=e382]:
+                                  - /url: /@indiatoday
+                              - img "Verified" [ref=e387]
+                            - generic [ref=e391]:
+                              - generic [ref=e392]: 31K views
+                              - generic [ref=e393]: •3 days ago
+                        - img "New" [ref=e398]
+                      - button "Action menu" [ref=e402]
+                  - generic [ref=e407]:
+                    - link [ref=e409] [cursor=pointer]:
+                      - /url: /watch?v=wyd02NkWuJE&pp=ygUFc29uZ3PSBwkJTwsBhyohjO8%3D
+                      - img [ref=e414]:
+                        - generic [ref=e415]: 3:16
+                      - generic: Now playing
+                    - generic [ref=e416] [cursor=pointer]:
+                      - link "Go to channel Asianet News English" [ref=e417]:
+                        - /url: /@asianetnewsenglish
+                      - generic [ref=e419]:
+                        - generic [ref=e420]:
+                          - heading [level=3] [ref=e421]:
+                            - link "Toxic | Tabaahi Song OUT | Yash & Kiara HOT Looks | Emraan Hashmi's New Competitors? | Entertainment 3 minutes, 16 seconds" [ref=e422]:
+                              - /url: /watch?v=wyd02NkWuJE&pp=ygUFc29uZ3PSBwkJTwsBhyohjO8%3D
+                              - text: Toxic | Tabaahi Song OUT | Yash & Kiara HOT Looks | Emraan Hashmi's New Competitors? | Entertainment
+                          - generic [ref=e424]:
+                            - generic [ref=e426]:
+                              - generic "Asianet News English" [ref=e429]:
+                                - link "Asianet News English" [ref=e430]:
+                                  - /url: /@asianetnewsenglish
+                              - img "Verified" [ref=e435]
+                            - generic [ref=e439]:
+                              - generic [ref=e440]: 31K views
+                              - generic [ref=e441]: •2 days ago
+                        - img "New" [ref=e446]
+                      - button "Action menu" [ref=e450]
+                  - generic [ref=e455]:
+                    - link [ref=e457] [cursor=pointer]:
+                      - /url: /watch?v=9mBUA4muI9I&pp=ygUFc29uZ3M%3D
+                    - generic [ref=e459] [cursor=pointer]:
+                      - link "Go to channel WION" [ref=e460]:
+                        - /url: /@WION
+                      - generic [ref=e461]:
+                        - generic [ref=e462]:
+                          - heading [level=3] [ref=e463]:
+                            - link "Anthony Hopkins Releases First Album After 60 Years Of Music | WION 1 minute, 44 seconds" [ref=e464]:
+                              - /url: /watch?v=9mBUA4muI9I&pp=ygUFc29uZ3M%3D
+                              - text: Anthony Hopkins Releases First Album After 60 Years Of Music | WION
+                          - generic [ref=e466]:
+                            - generic [ref=e468]:
+                              - generic "WION" [ref=e471]:
+                                - link "WION" [ref=e472]:
+                                  - /url: /@WION
+                              - img "Verified" [ref=e477]
+                            - generic [ref=e481]:
+                              - generic [ref=e482]: 2.8K views
+                              - generic [ref=e483]: •1 day ago
+                        - img "New" [ref=e488]
+                      - button "Action menu" [ref=e492]
+                  - generic [ref=e497]:
+                    - link [ref=e499] [cursor=pointer]:
+                      - /url: /watch?v=BWzmjBWt9AM&pp=ygUFc29uZ3M%3D
+                    - generic [ref=e501] [cursor=pointer]:
+                      - link "Go to channel Times Now" [ref=e502]:
+                        - /url: /@TimesNow
+                      - generic [ref=e503]:
+                        - generic [ref=e504]:
+                          - heading [level=3] [ref=e505]:
+                            - link "Legendary Playback Singer S Janaki Passes Away At 88, End Of An Era In Indian Music 2 minutes, 25 seconds" [ref=e506]:
+                              - /url: /watch?v=BWzmjBWt9AM&pp=ygUFc29uZ3M%3D
+                              - text: Legendary Playback Singer S Janaki Passes Away At 88, End Of An Era In Indian Music
+                          - generic [ref=e508]:
+                            - generic [ref=e510]:
+                              - generic "Times Now" [ref=e513]:
+                                - link "Times Now" [ref=e514]:
+                                  - /url: /@TimesNow
+                              - img "Verified" [ref=e519]
+                            - generic [ref=e523]:
+                              - generic [ref=e524]: 6.4K views
+                              - generic [ref=e525]: •12 hours ago
+                        - img "New" [ref=e530]
+                      - button "Action menu" [ref=e534]
+                  - generic [ref=e539]:
+                    - link [ref=e541] [cursor=pointer]:
+                      - /url: /watch?v=4P6QwTX-d_s&pp=ygUFc29uZ3M%3D
+                    - generic [ref=e543] [cursor=pointer]:
+                      - link "Go to channel The Hindu" [ref=e544]:
+                        - /url: /@TheHinduOfficial
+                      - generic [ref=e545]:
+                        - generic [ref=e546]:
+                          - heading [level=3] [ref=e547]:
+                            - link "'दक्षिण भारत की कोकिला' एस. जानकी का 88 वर्ष की आयु में निधन 1 minute, 30 seconds" [ref=e548]:
+                              - /url: /watch?v=4P6QwTX-d_s&pp=ygUFc29uZ3M%3D
+                              - text: "'दक्षिण भारत की कोकिला' एस. जानकी का 88 वर्ष की आयु में निधन"
+                          - generic [ref=e550]:
+                            - generic [ref=e552]:
+                              - generic "The Hindu" [ref=e555]:
+                                - link "The Hindu" [ref=e556]:
+                                  - /url: /@TheHinduOfficial
+                              - img "Verified" [ref=e561]
+                            - generic [ref=e565]:
+                              - generic [ref=e566]: 11K views
+                              - generic [ref=e567]: •14 hours ago
+                        - img "New" [ref=e572]
+                      - button "Action menu" [ref=e576]
+                - button "Next" [ref=e582] [cursor=pointer]
+            - generic [ref=e587]:
+              - link [ref=e589] [cursor=pointer]:
+                - /url: /watch?v=JpSFL_bHtBA&list=RDJpSFL_bHtBA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e591] [cursor=pointer]:
+                - generic [ref=e592]:
+                  - generic [ref=e593]:
+                    - heading [level=3] [ref=e594]:
+                      - link "Haareya (Lyrics) - Arijit Singh | Meri Pyaari Bindu | 3 minutes, 35 seconds" [ref=e595]:
+                        - /url: /watch?v=JpSFL_bHtBA&list=RDJpSFL_bHtBA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Haareya (Lyrics) - Arijit Singh | Meri Pyaari Bindu |
+                    - button "Action menu" [ref=e599]
+                  - generic [ref=e605]:
+                    - generic [ref=e606]: 1.5M views
+                    - generic [ref=e607]: •1 month ago
+                - generic [ref=e608]:
+                  - link "Go to channel D-Muze India" [ref=e609]:
+                    - /url: /@D-MuzeIndia
+                  - link "D-Muze India" [ref=e614]:
+                    - /url: /@D-MuzeIndia
+                - generic [ref=e615]:
+                  - text: "Haareya (Lyrics) - Arijit Singh | Meri Pyaari Bindu | YT https://youtube.com/@lofimuze390 Lyrics: Haareya Dekheya Main ..."
+                  - tooltip "tooltip"
+            - generic [ref=e617]:
+              - link [ref=e619] [cursor=pointer]:
+                - /url: /watch?v=GVizJ_jpUnw&list=RDGVizJ_jpUnw&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e621] [cursor=pointer]:
+                - generic [ref=e622]:
+                  - generic [ref=e623]:
+                    - heading [level=3] [ref=e624]:
+                      - link "Gehra Hua - Lyrical (Full Version) | Dhurandhar, Ranveer Singh, Sara A,Shashwat Sachdev,Arijit Singh 6 minutes, 4 seconds" [ref=e625]:
+                        - /url: /watch?v=GVizJ_jpUnw&list=RDGVizJ_jpUnw&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Gehra Hua - Lyrical (Full Version) | Dhurandhar, Ranveer Singh, Sara A,Shashwat Sachdev,Arijit Singh
+                    - button "Action menu" [ref=e629]
+                  - generic [ref=e635]:
+                    - generic [ref=e636]: 142M views
+                    - generic [ref=e637]: •3 months ago
+                - generic [ref=e638]:
+                  - link "Go to channel Saregama Music" [ref=e639]:
+                    - /url: /@SaregamaMusic
+                  - generic [ref=e640]:
+                    - link "Saregama Music" [ref=e644]:
+                      - /url: /@SaregamaMusic
+                    - img "Verified" [ref=e649]
+                - generic [ref=e653]:
+                  - generic [ref=e654]: "Dive into the full depth of emotions with lyrics that bring every feeling to life. Subscribe to Saregama Music: ..."
+                  - tooltip "tooltip"
+                - img "4K" [ref=e659]
+            - generic [ref=e662]:
+              - link [ref=e664] [cursor=pointer]:
+                - /url: /watch?v=OdpCnQ7U1Qs&list=RDOdpCnQ7U1Qs&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e666] [cursor=pointer]:
+                - generic [ref=e667]:
+                  - generic [ref=e668]:
+                    - heading [level=3] [ref=e669]:
+                      - link "Mashooqa (Full HD Video) Kriti Sanon, Shahid Kapoor, Rashmika Mandanna | Cocktail 2 Songs | Pritam 3 minutes, 47 seconds" [ref=e670]:
+                        - /url: /watch?v=OdpCnQ7U1Qs&list=RDOdpCnQ7U1Qs&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Mashooqa (Full HD Video) Kriti Sanon, Shahid Kapoor, Rashmika Mandanna | Cocktail 2 Songs | Pritam
+                    - button "Action menu" [ref=e674]
+                  - generic [ref=e680]:
+                    - generic [ref=e681]: 14M views
+                    - generic [ref=e682]: •1 month ago
+                - generic [ref=e683]:
+                  - link "Go to channel iPop Superhits" [ref=e684]:
+                    - /url: /@iPopSuperhits
+                  - link "iPop Superhits" [ref=e689]:
+                    - /url: /@iPopSuperhits
+                - generic [ref=e690]:
+                  - text: Presenting the sizzling track "Mashooqa" from the highly anticipated romantic drama 'Cocktail 2'! Get ready to groove to this ...
+                  - tooltip "tooltip"
+                - img "4K" [ref=e695]
+            - generic [ref=e698]:
+              - link [ref=e700] [cursor=pointer]:
+                - /url: /watch?v=DHYqEP8jpGU&pp=ygUFc29uZ3M%3D
+              - generic [ref=e702] [cursor=pointer]:
+                - generic [ref=e703]:
+                  - generic [ref=e704]:
+                    - heading [level=3] [ref=e705]:
+                      - link "New Song 2026 | New Hindi Song | Best of Arijit Singh, Jubin Nautiyal,Atif Aslam ,Darshan Raval 💖 1 hour, 21 minutes" [ref=e706]:
+                        - /url: /watch?v=DHYqEP8jpGU&pp=ygUFc29uZ3M%3D
+                        - text: New Song 2026 | New Hindi Song | Best of Arijit Singh, Jubin Nautiyal,Atif Aslam ,Darshan Raval 💖
+                    - button "Action menu" [ref=e710]
+                  - generic [ref=e716]:
+                    - generic [ref=e717]: 109K views
+                    - generic [ref=e718]: •Streamed 5 hours ago
+                - generic [ref=e719]:
+                  - link "Go to channel Bollywood Latest S0ngs" [ref=e720]:
+                    - /url: /@bollywoodlatestsongs6
+                  - link "Bollywood Latest S0ngs" [ref=e725]:
+                    - /url: /@bollywoodlatestsongs6
+                - img "New" [ref=e730]
+            - generic [ref=e733]:
+              - link [ref=e735] [cursor=pointer]:
+                - /url: /watch?v=cy1jtXLutqU&list=RDcy1jtXLutqU&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e737] [cursor=pointer]:
+                - generic [ref=e738]:
+                  - generic [ref=e739]:
+                    - heading [level=3] [ref=e740]:
+                      - link "90s पुराने गाने | 90's Filmi Hindi Gaane | 90's Hindi Songs | Hindi Gana | 90's Evergreen Songs 1 hour, 10 minutes" [ref=e741]:
+                        - /url: /watch?v=cy1jtXLutqU&list=RDcy1jtXLutqU&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: 90s पुराने गाने | 90's Filmi Hindi Gaane | 90's Hindi Songs | Hindi Gana | 90's Evergreen Songs
+                    - button "Action menu" [ref=e745]
+                  - generic [ref=e751]:
+                    - generic [ref=e752]: 591K views
+                    - generic [ref=e753]: •1 day ago
+                - generic [ref=e754]:
+                  - link "Go to channel Tips Official" [ref=e755]:
+                    - /url: /@tipsofficial
+                  - generic [ref=e756]:
+                    - link "Tips Official" [ref=e760]:
+                      - /url: /@tipsofficial
+                    - img "Verified" [ref=e765]
+                - generic [ref=e769]:
+                  - text: Relive the golden era of Bollywood with this nostalgic collection of 90's पुराने गाने featuring timeless melodies, ...
+                  - tooltip "tooltip"
+                - img "New" [ref=e774]
+                - generic [ref=e778]:
+                  - generic [ref=e779]:
+                    - generic [ref=e782]: 12 chapters
+                    - button "Kisi Din Banoongi | Phool Mangu Na | I Love You Pyaar Kar | Aye Sahib Yeh Thik Nahin | Aaja Sajan Aaja | Tu Dharti Pe | Mera Mann | Aankhon Mein Base Ho Tum | Deewana Main Tera Deewana | Meri Tarah Tum Bhi | Kam Se Kam | Dil Tera Aashiq" [ref=e784]
+                  - button "More" [ref=e789]
+            - generic [ref=e794]:
+              - heading "Popular in Pune" [level=2] [ref=e797]
+              - generic [ref=e801]:
+                - generic [ref=e802]:
+                  - generic [ref=e804]:
+                    - link [ref=e806] [cursor=pointer]:
+                      - /url: /watch?v=hMBdmu9fQvc&list=RDhMBdmu9fQvc&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                    - generic [ref=e808] [cursor=pointer]:
+                      - generic [ref=e809]:
+                        - generic [ref=e810]:
+                          - heading [level=3] [ref=e811]:
+                            - link "Arijit Singh Songs | Hindi Love Songs | Arijit Singh Songs Playlist | Hindi Songs Collection 40 minutes" [ref=e812]:
+                              - /url: /watch?v=hMBdmu9fQvc&list=RDhMBdmu9fQvc&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                              - text: Arijit Singh Songs | Hindi Love Songs | Arijit Singh Songs Playlist | Hindi Songs Collection
+                          - button "Action menu" [ref=e816]
+                        - generic [ref=e822]:
+                          - generic [ref=e823]: 1.5M views
+                          - generic [ref=e824]: •5 months ago
+                      - generic [ref=e825]:
+                        - link "Go to channel Tips Official" [ref=e826]:
+                          - /url: /@tipsofficial
+                        - generic [ref=e827]:
+                          - link "Tips Official" [ref=e831]:
+                            - /url: /@tipsofficial
+                          - img "Verified" [ref=e836]
+                      - generic [ref=e840]:
+                        - generic [ref=e841]: Immerse yourself in the soulful world of Arijit Singh with this beautiful collection of Hindi love songs Stay updated with the latest ...
+                        - tooltip "tooltip"
+                      - generic [ref=e844]:
+                        - generic [ref=e845]:
+                          - generic [ref=e848]: 9 chapters
+                          - button "Tera Fitoor | Raat Akeli Thi | O Saathi | Aaj Zid | Kaala Jaadu | Heeriye | Main Rang Sharbaton Ka | Jaana Ve | Mera Aasmaan Jal Gaya" [ref=e850]
+                        - button "More" [ref=e855]
+                  - generic [ref=e860]:
+                    - link [ref=e862] [cursor=pointer]:
+                      - /url: /watch?v=hAx8MzR77G4&list=RDhAx8MzR77G4&start_radio=1&pp=ygUFc29uZ3OgBwHSBwkJTwsBhyohjO8%3D
+                    - generic [ref=e864] [cursor=pointer]:
+                      - generic [ref=e865]:
+                        - generic [ref=e866]:
+                          - heading [level=3] [ref=e867]:
+                            - link "Piya O Re Piya | Riteish Deshmukh | Genelia D'souza | Atif Aslam | Shreya Ghoshal | Evergreen Song 4 minutes, 35 seconds" [ref=e868]:
+                              - /url: /watch?v=hAx8MzR77G4&list=RDhAx8MzR77G4&start_radio=1&pp=ygUFc29uZ3OgBwHSBwkJTwsBhyohjO8%3D
+                              - text: Piya O Re Piya | Riteish Deshmukh | Genelia D'souza | Atif Aslam | Shreya Ghoshal | Evergreen Song
+                          - button "Action menu" [ref=e872]
+                        - generic [ref=e878]:
+                          - generic [ref=e879]: 276K views
+                          - generic [ref=e880]: •4 months ago
+                      - generic [ref=e881]:
+                        - link "Go to channel Hindi Songs Collection" [ref=e882]:
+                          - /url: /@HindiSongsCollection-r3q
+                        - link "Hindi Songs Collection" [ref=e887]:
+                          - /url: /@HindiSongsCollection-r3q
+                      - generic [ref=e888]:
+                        - generic [ref=e889]: "Song credits: Song: Piya O Re Piya Movie: Tere Naal Love Ho Gaya Singer: Atif Aslam & Shreya Ghoshal Music Director: Sachin ..."
+                        - tooltip "tooltip"
+                  - generic [ref=e891]:
+                    - link [ref=e893] [cursor=pointer]:
+                      - /url: /watch?v=Z_HHUkQqXm8&list=RDZ_HHUkQqXm8&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                    - generic [ref=e895] [cursor=pointer]:
+                      - generic [ref=e896]:
+                        - generic [ref=e897]:
+                          - heading [level=3] [ref=e898]:
+                            - link "New Hindi Love Songs Jukebox | Hindi Romantic Songs Nonstop | VDj Royal 33 minutes" [ref=e899]:
+                              - /url: /watch?v=Z_HHUkQqXm8&list=RDZ_HHUkQqXm8&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                              - text: New Hindi Love Songs Jukebox | Hindi Romantic Songs Nonstop | VDj Royal
+                          - button "Action menu" [ref=e903]
+                        - generic [ref=e909]:
+                          - generic [ref=e910]: 7.4K views
+                          - generic [ref=e911]: •7 days ago
+                      - generic [ref=e912]:
+                        - link "Go to channel VDj Royal" [ref=e913]:
+                          - /url: /channel/UC5yMD0m-4PIAwdDc696-Ntg
+                        - generic [ref=e914]:
+                          - link "VDj Royal" [ref=e918]:
+                            - /url: /channel/UC5yMD0m-4PIAwdDc696-Ntg
+                          - img "Official Artist Channel" [ref=e923]
+                      - generic [ref=e927]:
+                        - text: Best of 2026 Love Mashups | Bollywood Romantic Hits | Sayaara, Ek Dhadak, Aashiqui 3 & More Get ready to experience the ...
+                        - tooltip "tooltip"
+                - generic "+4 more" [ref=e929] [cursor=pointer]
+            - generic [ref=e931]:
+              - link [ref=e933] [cursor=pointer]:
+                - /url: /watch?v=3g9Z1iVa3CA&list=RD3g9Z1iVa3CA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e935] [cursor=pointer]:
+                - generic [ref=e936]:
+                  - generic [ref=e937]:
+                    - heading [level=3] [ref=e938]:
+                      - link "Kalyani (with Shreya Ghoshal) Remix ✨| Slowed & Reverb | ARJN | KDS | FIFTY4 | RONN | DeXterDuke 4 minutes, 58 seconds" [ref=e939]:
+                        - /url: /watch?v=3g9Z1iVa3CA&list=RD3g9Z1iVa3CA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Kalyani (with Shreya Ghoshal) Remix ✨| Slowed & Reverb | ARJN | KDS | FIFTY4 | RONN | DeXterDuke
+                    - button "Action menu" [ref=e943]
+                  - generic [ref=e949]:
+                    - generic [ref=e950]: 156K views
+                    - generic [ref=e951]: •1 day ago
+                - generic [ref=e952]:
+                  - link "Go to channel DeXterDuke" [ref=e953]:
+                    - /url: /channel/UCC9Kjt7Q6x63T_kkQF9qnWA
+                  - generic [ref=e954]:
+                    - link "DeXterDuke" [ref=e958]:
+                      - /url: /channel/UCC9Kjt7Q6x63T_kkQF9qnWA
+                    - img "Official Artist Channel" [ref=e963]
+                - generic [ref=e967]:
+                  - text: Subscribe to the channel for more exclusive remixes & mashups !! Follow me on Spotify https://bit.ly/44VfcTs Follow me on ...
+                  - tooltip "tooltip"
+                - img "New" [ref=e972]
+            - generic [ref=e975]:
+              - link [ref=e977] [cursor=pointer]:
+                - /url: /watch?v=ZXKgSOYGR6Q&list=RDZXKgSOYGR6Q&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e979] [cursor=pointer]:
+                - generic [ref=e980]:
+                  - generic [ref=e981]:
+                    - heading [level=3] [ref=e982]:
+                      - link "New Song 2026 | Ishq karte Hain Sanam | New Hindi Song | Kiara advani | Yash | New Song 5 minutes, 32 seconds" [ref=e983]:
+                        - /url: /watch?v=ZXKgSOYGR6Q&list=RDZXKgSOYGR6Q&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: New Song 2026 | Ishq karte Hain Sanam | New Hindi Song | Kiara advani | Yash | New Song
+                    - button "Action menu" [ref=e987]
+                  - generic [ref=e993]:
+                    - generic [ref=e994]: 358K views
+                    - generic [ref=e995]: •1 day ago
+                - generic [ref=e996]:
+                  - button "Collaboration channels" [ref=e998]
+                  - generic [ref=e1015]: Sagar Bairagi and Sagar Bairagi
+                - generic [ref=e1024]:
+                  - generic [ref=e1025]: New Song 2026, New Hindi Song, Ishq Karte Hain Sanam, Ishq Karte Hain Sanam Song, Ishq Karte Hain Sanam Sagar Bairagi, ...
+                  - tooltip "tooltip"
+                - generic [ref=e1027]:
+                  - img "New" [ref=e1030]
+                  - img "4K" [ref=e1034]
+            - generic [ref=e1036]:
+              - heading "Shorts" [level=2] [ref=e1046]
+              - generic [ref=e1048]:
+                - generic [ref=e1051]:
+                  - link [ref=e1052] [cursor=pointer]:
+                    - /url: /shorts/i6tej-F9Ek8
+                  - generic [ref=e1056] [cursor=pointer]:
+                    - link "|| Sun Saathiya || Divya Kumar & Priya Saraiya || Hindi Song || WhatsApp(Lyrics) Status ||" [ref=e1057]:
+                      - /url: /shorts/i6tej-F9Ek8
+                    - generic [ref=e1058]: 30M views
+                  - button "More actions" [ref=e1060] [cursor=pointer]
+                - generic [ref=e1066]:
+                  - link [ref=e1067] [cursor=pointer]:
+                    - /url: /shorts/a9vtCKAr_lM
+                  - generic [ref=e1071] [cursor=pointer]:
+                    - link "|| Khao Piyo Aish Karo Meri Marzi || AbhijeetBhattacharya || Hindi Song || WhatsApp(Lyrics)Status||" [ref=e1072]:
+                      - /url: /shorts/a9vtCKAr_lM
+                    - generic [ref=e1073]: 30M views
+                  - button "More actions" [ref=e1075] [cursor=pointer]
+                - generic [ref=e1081]:
+                  - link [ref=e1082] [cursor=pointer]:
+                    - /url: /shorts/P7_7evbNBo4
+                  - generic [ref=e1086] [cursor=pointer]:
+                    - link "90’S Old Hindi Songs🥰 90s Love Song😍 Udit Narayan, Alka Yagnik, Kumar Sanu songs Hindi Jukebox" [ref=e1087]:
+                      - /url: /shorts/P7_7evbNBo4
+                    - generic [ref=e1088]: 29M views
+                  - button "More actions" [ref=e1090] [cursor=pointer]
+                - generic [ref=e1096]:
+                  - link [ref=e1097] [cursor=pointer]:
+                    - /url: /shorts/Bwk_0v9DsGI
+                  - generic [ref=e1101] [cursor=pointer]:
+                    - link "Ice Cream Khaungi Kashmir Jaungi Song Dance Video | Hindi Dance Song | Nepali Girl Dance Video Hindi" [ref=e1102]:
+                      - /url: /shorts/Bwk_0v9DsGI
+                    - generic [ref=e1103]: 4.7M views
+                  - button "More actions" [ref=e1105] [cursor=pointer]
+                - generic [ref=e1111]:
+                  - link [ref=e1112] [cursor=pointer]:
+                    - /url: /shorts/C8hxCJ8VPrs
+                  - generic [ref=e1116] [cursor=pointer]:
+                    - link "Bol Bol Rani Kya Chahiye || Girl's Dance || WhatsApp (Lyrics) Dance Status ||" [ref=e1117]:
+                      - /url: /shorts/C8hxCJ8VPrs
+                    - generic [ref=e1118]: 21M views
+                  - button "More actions" [ref=e1120] [cursor=pointer]
+            - generic [ref=e1125]:
+              - link [ref=e1127] [cursor=pointer]:
+                - /url: /watch?v=0A1DdZ7Lf4c&list=RD0A1DdZ7Lf4c&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1129] [cursor=pointer]:
+                - generic [ref=e1130]:
+                  - generic [ref=e1131]:
+                    - heading [level=3] [ref=e1132]:
+                      - 'link "Udi udi song (neesh & sarkar) 🥹❤️ #fyp #viral #song #aesthetic 2 minutes, 36 seconds" [ref=e1133]':
+                        - /url: /watch?v=0A1DdZ7Lf4c&list=RD0A1DdZ7Lf4c&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: "Udi udi song (neesh & sarkar) 🥹❤️ #fyp #viral #song #aesthetic"
+                    - button "Action menu" [ref=e1137]
+                  - generic [ref=e1143]:
+                    - generic [ref=e1144]: 3.4M views
+                    - generic [ref=e1145]: •1 month ago
+                - generic [ref=e1146]:
+                  - link "Go to channel tulip 𐙚🌷!!" [ref=e1147]:
+                    - /url: /@fanheart.khushi
+                  - link "tulip 𐙚🌷!!" [ref=e1152]:
+                    - /url: /@fanheart.khushi
+                - generic [ref=e1153]:
+                  - generic [ref=e1154]: "it's my fvrt song bro #fyp #viral #explore."
+                  - tooltip "tooltip"
+            - generic [ref=e1156]:
+              - link [ref=e1158] [cursor=pointer]:
+                - /url: /watch?v=0RxUcKE13ZI&list=RD0RxUcKE13ZI&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1160] [cursor=pointer]:
+                - generic [ref=e1161]:
+                  - generic [ref=e1162]:
+                    - heading [level=3] [ref=e1163]:
+                      - link "Bandhu 2.0 | Shahid, Kriti, Rashmika| Pritam | Kavita | Neeraj | Irshad K | Cocktail 2 | 19th June 3 minutes, 6 seconds" [ref=e1164]:
+                        - /url: /watch?v=0RxUcKE13ZI&list=RD0RxUcKE13ZI&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Bandhu 2.0 | Shahid, Kriti, Rashmika| Pritam | Kavita | Neeraj | Irshad K | Cocktail 2 | 19th June
+                    - button "Action menu" [ref=e1168]
+                  - generic [ref=e1174]:
+                    - generic [ref=e1175]: 35M views
+                    - generic [ref=e1176]: •3 weeks ago
+                - generic [ref=e1177]:
+                  - button "Collaboration channels" [ref=e1179]
+                  - generic [ref=e1203]: Sony Music Indiaand 2 more
+                - generic [ref=e1212]:
+                  - text: Tumhi din chadhe, tumhi din dhale, Tumhi ho bandhu, sakha tumhi! Shahid Kapoor, Kriti Sanon and Rashmika Mandanna are ...
+                  - tooltip "tooltip"
+                - img "4K" [ref=e1217]
+            - generic [ref=e1220]:
+              - heading "Channels new to you" [level=2] [ref=e1223]
+              - generic [ref=e1227]:
+                - generic [ref=e1228]:
+                  - generic [ref=e1230]:
+                    - link [ref=e1232] [cursor=pointer]:
+                      - /url: /watch?v=F2m4HPLvj-4&list=RDF2m4HPLvj-4&start_radio=1&pp=ygUFc29uZ3OgBwHSBwkJTwsBhyohjO8%3D
+                    - generic [ref=e1234] [cursor=pointer]:
+                      - generic [ref=e1235]:
+                        - generic [ref=e1236]:
+                          - heading [level=3] [ref=e1237]:
+                            - 'link "JAIYE SAJANA (Video): Dhurandhar The Revenge | Ranveer Singh | Shashwat S | Satinder S | Jasmine S 2 minutes, 32 seconds" [ref=e1238]':
+                              - /url: /watch?v=F2m4HPLvj-4&list=RDF2m4HPLvj-4&start_radio=1&pp=ygUFc29uZ3OgBwHSBwkJTwsBhyohjO8%3D
+                              - text: "JAIYE SAJANA (Video): Dhurandhar The Revenge | Ranveer Singh | Shashwat S | Satinder S | Jasmine S"
+                          - button "Action menu" [ref=e1242]
+                        - generic [ref=e1248]:
+                          - generic [ref=e1249]: 216M views
+                          - generic [ref=e1250]: •3 months ago
+                      - generic [ref=e1251]:
+                        - button "Collaboration channels" [ref=e1253]
+                        - generic [ref=e1277]: T-Seriesand 2 more
+                      - generic [ref=e1286]:
+                        - generic [ref=e1287]: "The Most Awaited Video Song Is Here. Presenting \"Jaiye Sajana\", from the film #DhurandharTheRevenge. Credits: Jio Studios ..."
+                        - tooltip "tooltip"
+                      - img "4K" [ref=e1292]
+                  - generic [ref=e1295]:
+                    - link [ref=e1297] [cursor=pointer]:
+                      - /url: /watch?v=dePa1Wtv88s&list=RDdePa1Wtv88s&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                    - generic [ref=e1299] [cursor=pointer]:
+                      - generic [ref=e1300]:
+                        - generic [ref=e1301]:
+                          - heading [level=3] [ref=e1302]:
+                            - link "Lutt Le Gaya - Audio | Dhurandhar | Ranveer Singh, Akshaye Khanna, Shashwat Sachdev, Simran C 4 minutes, 18 seconds" [ref=e1303]:
+                              - /url: /watch?v=dePa1Wtv88s&list=RDdePa1Wtv88s&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                              - text: Lutt Le Gaya - Audio | Dhurandhar | Ranveer Singh, Akshaye Khanna, Shashwat Sachdev, Simran C
+                          - button "Action menu" [ref=e1307]
+                        - generic [ref=e1313]:
+                          - generic [ref=e1314]: 9M views
+                          - generic [ref=e1315]: •3 months ago
+                      - generic [ref=e1316]:
+                        - link "Go to channel Saregama Music" [ref=e1317]:
+                          - /url: /@SaregamaMusic
+                        - generic [ref=e1318]:
+                          - link "Saregama Music" [ref=e1322]:
+                            - /url: /@SaregamaMusic
+                          - img "Verified" [ref=e1327]
+                      - generic [ref=e1331]:
+                        - generic [ref=e1332]: "Lutt Le Gaya — a fun, upbeat track by Simran Choudhary! Subscribe to Saregama Music: https://bit.ly/3FkAS0W A Shashwat ..."
+                        - tooltip "tooltip"
+                  - generic [ref=e1334]:
+                    - link [ref=e1336] [cursor=pointer]:
+                      - /url: /watch?v=QHdajZktFEU&list=RDQHdajZktFEU&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                    - generic [ref=e1338] [cursor=pointer]:
+                      - generic [ref=e1339]:
+                        - generic [ref=e1340]:
+                          - heading [level=3] [ref=e1341]:
+                            - 'link "Bangles (Official #Video) Sanju Rathod Ft. Isha Malviya | G-Spark | #Marathi Pop 2026 | बांगडी 4 minutes, 4 seconds" [ref=e1342]':
+                              - /url: /watch?v=QHdajZktFEU&list=RDQHdajZktFEU&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                              - text: "Bangles (Official #Video) Sanju Rathod Ft. Isha Malviya | G-Spark | #Marathi Pop 2026 | बांगडी"
+                          - button "Action menu" [ref=e1346]
+                        - generic [ref=e1352]:
+                          - generic [ref=e1353]: 131M views
+                          - generic [ref=e1354]: •2 months ago
+                      - generic [ref=e1355]:
+                        - link "Go to channel Sanju Rathod SR" [ref=e1356]:
+                          - /url: /channel/UC5Sx4un-pScLvw6chDOkCGw
+                        - generic [ref=e1357]:
+                          - link "Sanju Rathod SR" [ref=e1361]:
+                            - /url: /channel/UC5Sx4un-pScLvw6chDOkCGw
+                          - img "Official Artist Channel" [ref=e1366]
+                      - generic [ref=e1370]:
+                        - generic [ref=e1371]: Sanju Rathod presents the official music video of Bangles. After the success of Shaky, he reunites with Isha Malviya for a track that ...
+                        - tooltip "tooltip"
+                      - generic [ref=e1373]:
+                        - img "4K" [ref=e1376]
+                        - img "Closed captions" [ref=e1380]:
+                          - generic [ref=e1381]: CC
+                - generic "+4 more" [ref=e1383] [cursor=pointer]
+            - generic [ref=e1385]:
+              - link [ref=e1387] [cursor=pointer]:
+                - /url: /watch?v=WWIfHemqSEA&list=RDWWIfHemqSEA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1389] [cursor=pointer]:
+                - generic [ref=e1390]:
+                  - generic [ref=e1391]:
+                    - heading [level=3] [ref=e1392]:
+                      - link "Arijit Singh - Tujhko (from Cocktail 2) Rashmika Mandanna, Shahid Kapoor & Kriti | Love Song 2026 5 minutes, 37 seconds" [ref=e1393]:
+                        - /url: /watch?v=WWIfHemqSEA&list=RDWWIfHemqSEA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Arijit Singh - Tujhko (from Cocktail 2) Rashmika Mandanna, Shahid Kapoor & Kriti | Love Song 2026
+                    - button "Action menu" [ref=e1397]
+                  - generic [ref=e1403]:
+                    - generic [ref=e1404]: 10M views
+                    - generic [ref=e1405]: •1 month ago
+                - generic [ref=e1406]:
+                  - link "Go to channel iPop Superhits" [ref=e1407]:
+                    - /url: /@iPopSuperhits
+                  - link "iPop Superhits" [ref=e1412]:
+                    - /url: /@iPopSuperhits
+                - generic [ref=e1413]:
+                  - text: ✨ Presenting a special tribute to "Tujhko" – the beautifully soulful and romantic track from the upcoming movie Cocktail 2 ...
+                  - tooltip "tooltip"
+                - img "4K" [ref=e1418]
+            - generic [ref=e1421]:
+              - link [ref=e1423] [cursor=pointer]:
+                - /url: /watch?v=v5jVX0QYwQo&list=RDv5jVX0QYwQo&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1425] [cursor=pointer]:
+                - generic [ref=e1426]:
+                  - generic [ref=e1427]:
+                    - heading [level=3] [ref=e1428]:
+                      - link "Shararat - 8K Video | Dhurandhar | Ranveer Singh, Shashwat S, Jasmine, Madhubanti, Ayesha, Krystle 3 minutes, 47 seconds" [ref=e1429]:
+                        - /url: /watch?v=v5jVX0QYwQo&list=RDv5jVX0QYwQo&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Shararat - 8K Video | Dhurandhar | Ranveer Singh, Shashwat S, Jasmine, Madhubanti, Ayesha, Krystle
+                    - button "Action menu" [ref=e1433]
+                  - generic [ref=e1439]:
+                    - generic [ref=e1440]: 89M views
+                    - generic [ref=e1441]: •2 months ago
+                - generic [ref=e1442]:
+                  - link "Go to channel Saregama Music" [ref=e1443]:
+                    - /url: /@SaregamaMusic
+                  - generic [ref=e1444]:
+                    - link "Saregama Music" [ref=e1448]:
+                      - /url: /@SaregamaMusic
+                    - img "Verified" [ref=e1453]
+                - generic [ref=e1457]:
+                  - generic [ref=e1458]: "Shararat in stunning 8K brings playful vibes and infectious energy in ultra-high definition. Subscribe to Saregama Music: ..."
+                  - tooltip "tooltip"
+                - img "8K" [ref=e1463]
+            - generic [ref=e1465]:
+              - heading "Shorts" [level=2] [ref=e1475]
+              - generic [ref=e1476]:
+                - generic [ref=e1477]:
+                  - generic [ref=e1480]:
+                    - link [ref=e1481] [cursor=pointer]:
+                      - /url: /shorts/UTmMi5eSX6A
+                      - img [ref=e1486]:
+                        - generic [ref=e1487]: New
+                    - generic [ref=e1488] [cursor=pointer]:
+                      - link "90’s Old Hindi Songs🥰 90s Love Song😍 Udit Narayan, Alka Yagnik, Kumar Sanu songs Hindi Jukebox" [ref=e1489]:
+                        - /url: /shorts/UTmMi5eSX6A
+                      - generic [ref=e1490]: 581K views
+                    - button "More actions" [ref=e1492] [cursor=pointer]
+                  - generic [ref=e1498]:
+                    - link [ref=e1499] [cursor=pointer]:
+                      - /url: /shorts/bL8tuIQ-4NM
+                    - generic [ref=e1503] [cursor=pointer]:
+                      - 'link "Top 5 Most Popular Songs OF Different Countries🎧🌍| Habibi-Levitating-aankh marey| #explore #shorts" [ref=e1504]':
+                        - /url: /shorts/bL8tuIQ-4NM
+                      - generic [ref=e1505]: 87M views
+                    - button "More actions" [ref=e1507] [cursor=pointer]
+                  - generic [ref=e1513]:
+                    - link [ref=e1514] [cursor=pointer]:
+                      - /url: /shorts/gkFhJN9SF9A
+                    - generic [ref=e1518] [cursor=pointer]:
+                      - 'link "18th birthday lofi song popular song #bollywood #song #popular #trending #shorts" [ref=e1519]':
+                        - /url: /shorts/gkFhJN9SF9A
+                      - generic [ref=e1520]: 14M views
+                    - button "More actions" [ref=e1522] [cursor=pointer]
+                  - generic [ref=e1528]:
+                    - link [ref=e1529] [cursor=pointer]:
+                      - /url: /shorts/W6l6Sbi9gSo
+                      - img [ref=e1534]:
+                        - generic [ref=e1535]: New
+                    - generic [ref=e1536] [cursor=pointer]:
+                      - link "90’S Old Hindi Songs🥰 90s Love Song😍 Udit Narayan, Alka Yagnik, Kumar Sanu songs Hindi Jukebox" [ref=e1537]:
+                        - /url: /shorts/W6l6Sbi9gSo
+                      - generic [ref=e1538]: 853K views
+                    - button "More actions" [ref=e1540] [cursor=pointer]
+                  - generic [ref=e1546]:
+                    - link [ref=e1547] [cursor=pointer]:
+                      - /url: /shorts/V7AupnCjQmg
+                      - img [ref=e1552]:
+                        - generic [ref=e1553]: New
+                    - generic [ref=e1554] [cursor=pointer]:
+                      - 'link "❤️‍🔥Top 5 Party Songs | Non Stop Bollywood Dance Mashup | Without Which A Party Isn''t Fun #explor..." [ref=e1555]':
+                        - /url: /shorts/V7AupnCjQmg
+                      - generic [ref=e1556]: 125K views
+                    - button "More actions" [ref=e1558] [cursor=pointer]
+                - generic [ref=e1562]:
+                  - generic [ref=e1565]:
+                    - link [ref=e1566] [cursor=pointer]:
+                      - /url: /shorts/dAf33uHcQIk
+                    - generic [ref=e1570] [cursor=pointer]:
+                      - 'link "Ice Cream (Honey Singh) || Girls Dance || WhatsApp (Lyrics) Dance Status || #shorts #viral" [ref=e1571]':
+                        - /url: /shorts/dAf33uHcQIk
+                      - generic [ref=e1572]: 14M views
+                    - button "More actions" [ref=e1574] [cursor=pointer]
+                  - generic [ref=e1580]:
+                    - link [ref=e1581] [cursor=pointer]:
+                      - /url: /shorts/JQ-kBounVws
+                    - generic [ref=e1585] [cursor=pointer]:
+                      - 'link "Trend with mumma | Waterfall trend | #music #newsong #song #bollywood" [ref=e1586]':
+                        - /url: /shorts/JQ-kBounVws
+                      - generic [ref=e1587]: 75M views
+                    - button "More actions" [ref=e1589] [cursor=pointer]
+                  - generic [ref=e1595]:
+                    - link [ref=e1596] [cursor=pointer]:
+                      - /url: /shorts/9IZX12ZIDYU
+                    - generic [ref=e1600] [cursor=pointer]:
+                      - 'link "Chuttamulle🦋💞 wait and see🤩 comment ur next song for dance😇 #danceshorts #blackbeescouple" [ref=e1601]':
+                        - /url: /shorts/9IZX12ZIDYU
+                      - generic [ref=e1602]: 12M views
+                    - button "More actions" [ref=e1604] [cursor=pointer]
+                  - generic [ref=e1610]:
+                    - link [ref=e1611] [cursor=pointer]:
+                      - /url: /shorts/8tcwIN7q5_Y
+                    - generic [ref=e1615] [cursor=pointer]:
+                      - 'link "SAHIBA ✨ || Sahiba song lyrics#newsong #song #trending #sahiba || aesthetic songs" [ref=e1616]':
+                        - /url: /shorts/8tcwIN7q5_Y
+                      - generic [ref=e1617]: 20M views
+                    - button "More actions" [ref=e1619] [cursor=pointer]
+                  - generic [ref=e1625]:
+                    - link [ref=e1626] [cursor=pointer]:
+                      - /url: /shorts/lfGj8P_zuTw
+                      - img [ref=e1631]:
+                        - generic [ref=e1632]: New
+                    - generic [ref=e1633] [cursor=pointer]:
+                      - link "Pranking sister-in-law backfired 90’S Old Hindi Songs🥰 90s Love Song😍 Udit Narayan, Alka Yagnik," [ref=e1634]:
+                        - /url: /shorts/lfGj8P_zuTw
+                      - generic [ref=e1635]: 66K views
+                    - button "More actions" [ref=e1637] [cursor=pointer]
+              - button "Show more" [ref=e1644] [cursor=pointer]
+            - generic [ref=e1649]:
+              - link [ref=e1651] [cursor=pointer]:
+                - /url: /watch?v=y69Bj1h-_aA&list=RDy69Bj1h-_aA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1653] [cursor=pointer]:
+                - generic [ref=e1654]:
+                  - generic [ref=e1655]:
+                    - heading [level=3] [ref=e1656]:
+                      - link "New Song 2026 | New Hindi Song | Best of Arijit Singh, Jubin Nautiyal,Atif Aslam ,Darshan Raval 💖 1 hour, 9 minutes" [ref=e1657]:
+                        - /url: /watch?v=y69Bj1h-_aA&list=RDy69Bj1h-_aA&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: New Song 2026 | New Hindi Song | Best of Arijit Singh, Jubin Nautiyal,Atif Aslam ,Darshan Raval 💖
+                    - button "Action menu" [ref=e1661]
+                  - generic [ref=e1667]:
+                    - generic [ref=e1668]: 1.6M views
+                    - generic [ref=e1669]: •2 weeks ago
+                - generic [ref=e1670]:
+                  - link "Go to channel CUMBIAS VIEJITAS" [ref=e1671]:
+                    - /url: /@HINDIFUSIONWAVES68
+                  - link "CUMBIAS VIEJITAS" [ref=e1676]:
+                    - /url: /@HINDIFUSIONWAVES68
+                - generic [ref=e1677]:
+                  - text: "hindisong #hindilovesong #bollywoodsongs #hindisong2026 #newsong2026 ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1679]:
+              - link [ref=e1681] [cursor=pointer]:
+                - /url: /watch?v=MRtRcTfszjY&list=RDMRtRcTfszjY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1683] [cursor=pointer]:
+                - generic [ref=e1684]:
+                  - generic [ref=e1685]:
+                    - heading [level=3] [ref=e1686]:
+                      - link "सोच ना सके पूरा वीडियो गाना | एयरलिफ्ट | अक्षय कुमार, निमरत कौर | अरजीत सिंह, तुलसी कुमार 4 minutes, 21 seconds" [ref=e1687]:
+                        - /url: /watch?v=MRtRcTfszjY&list=RDMRtRcTfszjY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: सोच ना सके पूरा वीडियो गाना | एयरलिफ्ट | अक्षय कुमार, निमरत कौर | अरजीत सिंह, तुलसी कुमार
+                    - button "Action menu" [ref=e1691]
+                  - generic [ref=e1697]:
+                    - generic [ref=e1698]: 393M views
+                    - generic [ref=e1699]: •10 years ago
+                - generic [ref=e1700]:
+                  - link "Go to channel T-Series" [ref=e1701]:
+                    - /url: /@tseries
+                  - generic [ref=e1702]:
+                    - link "T-Series" [ref=e1706]:
+                      - /url: /@tseries
+                    - img "Verified" [ref=e1711]
+                - generic [ref=e1715]:
+                  - text: "\"\" \"संगीत की दुनिया को बदल सकते हैं।\" \"टी-सीरीज भारत की सबसे बड़ी संगीत लेबल और फिल्म स्टूडियो है, दुनिया ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1717]:
+              - link [ref=e1719] [cursor=pointer]:
+                - /url: /watch?v=7dhrEgQFr2Y&list=RD7dhrEgQFr2Y&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1721] [cursor=pointer]:
+                - generic [ref=e1722]:
+                  - generic [ref=e1723]:
+                    - heading [level=3] [ref=e1724]:
+                      - link "New Song 2026 | Top 10 Hindi Romantic Songs | Audio Jukebox | Latest Hindi Songs 2026 48 minutes" [ref=e1725]:
+                        - /url: /watch?v=7dhrEgQFr2Y&list=RD7dhrEgQFr2Y&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: New Song 2026 | Top 10 Hindi Romantic Songs | Audio Jukebox | Latest Hindi Songs 2026
+                    - button "Action menu" [ref=e1729]
+                  - generic [ref=e1735]:
+                    - generic [ref=e1736]: 30K views
+                    - generic [ref=e1737]: •17 hours ago
+                - generic [ref=e1738]:
+                  - link "Go to channel Sagar Bairagi" [ref=e1739]:
+                    - /url: /channel/UCZmdWTnp7cM5g6c8tEYlzsg
+                  - generic [ref=e1740]:
+                    - link "Sagar Bairagi" [ref=e1744]:
+                      - /url: /channel/UCZmdWTnp7cM5g6c8tEYlzsg
+                    - img "Official Artist Channel" [ref=e1749]
+                - generic [ref=e1753]:
+                  - generic [ref=e1754]: New Song 2026, New Hindi Song, Bollywood Top 10 Romantic Songs, Best Romantic Songs Hindi, Audio Jukebox, Romantic ...
+                  - tooltip "tooltip"
+                - img "New" [ref=e1759]
+                - generic [ref=e1763]:
+                  - generic [ref=e1764]:
+                    - generic [ref=e1767]: 10 chapters
+                    - button "Ishq karte Hain Sanam | Roohani | guzaarish | Gumshuda | Shiddat | Bheegi Bheegi Yaadein | Tere Ishq Mein Fanaa | Yaara Ve | Phir Laut Aana | Ishq Hone Laga" [ref=e1769]
+                  - button "More" [ref=e1774]
+            - generic [ref=e1779]:
+              - link [ref=e1781] [cursor=pointer]:
+                - /url: /watch?v=NW6Dgax2d6I&list=RDNW6Dgax2d6I&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1783] [cursor=pointer]:
+                - generic [ref=e1784]:
+                  - generic [ref=e1785]:
+                    - heading [level=3] [ref=e1786]:
+                      - link "Sahiba (Music Video) Jasleen Royal |Vijay Deverakonda Radhikka Madan|Stebin| Priya|Aditya| Sudhanshu 4 minutes, 20 seconds" [ref=e1787]:
+                        - /url: /watch?v=NW6Dgax2d6I&list=RDNW6Dgax2d6I&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Sahiba (Music Video) Jasleen Royal |Vijay Deverakonda Radhikka Madan|Stebin| Priya|Aditya| Sudhanshu
+                    - button "Action menu" [ref=e1791]
+                  - generic [ref=e1797]:
+                    - generic [ref=e1798]: 272M views
+                    - generic [ref=e1799]: •1 year ago
+                - generic [ref=e1800]:
+                  - link "Go to channel Jasleen Royal" [ref=e1801]:
+                    - /url: /channel/UCmkWj7Sft1lt1VHX43BbAfA
+                  - generic [ref=e1802]:
+                    - link "Jasleen Royal" [ref=e1806]:
+                      - /url: /channel/UCmkWj7Sft1lt1VHX43BbAfA
+                    - img "Official Artist Channel" [ref=e1811]
+                - generic [ref=e1815]:
+                  - text: "Sahiba #JasleenRoyal #VijayDeverakonda #RadhikkaMadan #SudhanshuSaria #StebinBen SAHIBA - A Journey of ..."
+                  - tooltip "tooltip"
+                - img "Closed captions" [ref=e1820]:
+                  - generic [ref=e1821]: CC
+            - generic [ref=e1823]:
+              - link [ref=e1825] [cursor=pointer]:
+                - /url: /watch?v=Xv7LRKsCejk&list=RDXv7LRKsCejk&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1827] [cursor=pointer]:
+                - generic [ref=e1828]:
+                  - generic [ref=e1829]:
+                    - heading [level=3] [ref=e1830]:
+                      - link "Ishq De Fanniyar - Jyotica Tangri | Fukrey Returns | Pulkit Samrat & Priya Anand | Lyrical 3 minutes" [ref=e1831]:
+                        - /url: /watch?v=Xv7LRKsCejk&list=RDXv7LRKsCejk&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Ishq De Fanniyar - Jyotica Tangri | Fukrey Returns | Pulkit Samrat & Priya Anand | Lyrical
+                    - button "Action menu" [ref=e1835]
+                  - generic [ref=e1841]:
+                    - generic [ref=e1842]: 5.2M views
+                    - generic [ref=e1843]: •2 months ago
+                - generic [ref=e1844]:
+                  - link "Go to channel Dil Se Bollywood 24x7" [ref=e1845]:
+                    - /url: /@DilSeBollywood24x7
+                  - link "Dil Se Bollywood 24x7" [ref=e1850]:
+                    - /url: /@DilSeBollywood24x7
+                - generic [ref=e1851]:
+                  - text: "Cast: Pulkit Samrat, Priya Anand, Varun Sharma, Manjot Singh, Ali Fazal, and Richa Chadha Song: Ishq De Fanniyar Movie ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1853]:
+              - link [ref=e1855] [cursor=pointer]:
+                - /url: /watch?v=43y5rT7YjQY&list=RD43y5rT7YjQY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1857] [cursor=pointer]:
+                - generic [ref=e1858]:
+                  - generic [ref=e1859]:
+                    - heading [level=3] [ref=e1860]:
+                      - link "Mind relaxing lofi song Arijit Singh | Soft songs | Arijit Singh songs | best lofi song 27 minutes" [ref=e1861]:
+                        - /url: /watch?v=43y5rT7YjQY&list=RD43y5rT7YjQY&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Mind relaxing lofi song Arijit Singh | Soft songs | Arijit Singh songs | best lofi song
+                    - button "Action menu" [ref=e1865]
+                  - generic [ref=e1871]:
+                    - generic [ref=e1872]: 5.6M views
+                    - generic [ref=e1873]: •1 month ago
+                - generic [ref=e1874]:
+                  - link "Go to channel Y Music 2" [ref=e1875]:
+                    - /url: /@ymusicp2
+                  - link "Y Music 2" [ref=e1880]:
+                    - /url: /@ymusicp2
+                - generic [ref=e1881]:
+                  - generic [ref=e1882]: "Best Of Arijit Singh / Old Hits Song / Top 10 All time Hits song / Arijit Singh old song /arijit singh old songs, #VibesofLoveMashup ..."
+                  - tooltip "tooltip"
+            - generic [ref=e1884]:
+              - link [ref=e1886] [cursor=pointer]:
+                - /url: /watch?v=7SLGxEDyqWo&list=RD7SLGxEDyqWo&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+              - generic [ref=e1888] [cursor=pointer]:
+                - generic [ref=e1889]:
+                  - generic [ref=e1890]:
+                    - heading [level=3] [ref=e1891]:
+                      - link "Chunnari Chunnari - Biwi No.1 (1999) | Abhijeet | Anuradha Sriram | 90s Hindi Song 5 minutes, 16 seconds" [ref=e1892]:
+                        - /url: /watch?v=7SLGxEDyqWo&list=RD7SLGxEDyqWo&start_radio=1&pp=ygUFc29uZ3OgBwE%3D
+                        - text: Chunnari Chunnari - Biwi No.1 (1999) | Abhijeet | Anuradha Sriram | 90s Hindi Song
+                    - button "Action menu" [ref=e1896]
+                  - generic [ref=e1902]:
+                    - generic [ref=e1903]: 169M views
+                    - generic [ref=e1904]: •1 year ago
+                - generic [ref=e1905]:
+                  - link "Go to channel Nadeem Shravan Songs" [ref=e1906]:
+                    - /url: /@NadeemShravanSongs
+                  - generic [ref=e1907]:
+                    - link "Nadeem Shravan Songs" [ref=e1911]:
+                      - /url: /@NadeemShravanSongs
+                    - img "Verified" [ref=e1916]
+                - generic [ref=e1920]:
+                  - generic [ref=e1921]: "Chunnari Chunnari - Biwi No.1 (1999) | Abhijeet | Anuradha Sriram | 90s Hindi Song Song Credits: Song: Chunnari Chunnari ..."
+                  - tooltip "tooltip"
+      - text: •
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic "YouTube Video Player":
+                          - generic:
+                            - button "Play"

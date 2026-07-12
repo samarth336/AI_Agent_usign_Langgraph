@@ -37,6 +37,27 @@ def planner_prompt(state: AgentState):
                  - return text results with relevant information
                  - find image URLs and links
 
+                        2. browser
+                             - Use browser when the user asks to:
+                                 - open a URL or website
+                                 - navigate to a page or repo
+                                 - move through GitHub profiles/repositories
+                                 - click or inspect a live page
+
+                             - browser can:
+                                 - open a page directly
+                                 - navigate inside the page
+                                 - inspect live page content
+
+                        3. filesystem
+                             - Use filesystem when the user asks to:
+                                 - read a local file
+                                 - inspect source code from an absolute path
+                                 - explain the contents of a file on disk
+
+                             - filesystem can:
+                                 - read text files from allowed local directories
+
             DECISION RULES:
 
             - If you can answer directly using:
@@ -52,6 +73,17 @@ def planner_prompt(state: AgentState):
                 - answer = null
                 - tool_input = a concise query suitable for web search
 
+                        - If the user wants to open a website, navigate a page,
+                            or move from a GitHub profile to a repo:
+                                - tool = "browser"
+                                - answer = null
+                                - tool_input = the target URL or navigation instruction
+
+                        - If the user gives an absolute file path or asks to read/explain a local file:
+                            - tool = "filesystem"
+                            - answer = null
+                            - tool_input = the file path or the full request containing it
+
             - If user asks for images/photos/pictures:
                 - tool = "search"
                 - answer = null
@@ -64,11 +96,11 @@ def planner_prompt(state: AgentState):
               you MUST reuse that information.
             - NEVER invent search results or image URLs.
             - NEVER choose a non-existent tool.
-            - search is the ONLY tool you may choose.
+                        - search, browser, and filesystem are the only tools you may choose.
             - For image requests, append "image" or "photo" to the search query.
             - Follow the output schema strictly.
             OUTPUT SCHEMA:
-            tool: one of ["search", "none"]
+                        tool: one of ["search", "browser", "filesystem", "none"]
             answer: string or null 
             tool_input: string or null
             """
